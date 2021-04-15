@@ -1984,6 +1984,7 @@
             <argument>G:\PFEE-main\vendor\symfony\form/Resources/translations\validators.tr.xlf</argument>
             <argument>G:\PFEE-main\vendor\symfony\security-core/Resources/translations\security.tr.xlf</argument>
             <argument>G:\PFEE-main\vendor\symfony\validator/Resources/translations\validators.tr.xlf</argument>
+            <argument>G:\PFEE-main\vendor\symfonycasts\reset-password-bundle\src/Resources/translations\ResetPasswordBundle.tr.xlf</argument>
           </argument>
           <argument key="uk" type="collection">
             <argument>G:\PFEE-main\vendor\knplabs\knp-paginator-bundle/translations\KnpPaginatorBundle.uk.xliff</argument>

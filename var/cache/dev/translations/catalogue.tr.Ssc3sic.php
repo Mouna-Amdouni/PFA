@@ -161,6 +161,14 @@ $catalogue = new MessageCatalogue('tr', array (
     'Too many failed login attempts, please try again later.' => 'Çok fazla başarısız giriş denemesi, lütfen daha sonra tekrar deneyin.',
     'Invalid or expired login link.' => 'Geçersiz veya süresi dolmuş oturum açma bağlantısı.',
   ),
+  'ResetPasswordBundle' => 
+  array (
+    '%count% year|%count% years' => '%count% yıl|%count% yıl',
+    '%count% month|%count% months' => '%count% ay|%count% ay',
+    '%count% day|%count% days' => '%count% gün|%count% gün',
+    '%count% hour|%count% hours' => '%count% saat|%count% saat',
+    '%count% minute|%count% minutes' => '%count% dakika|%count% dakika',
+  ),
 ));
 
 $catalogueEn = new MessageCatalogue('en', array (

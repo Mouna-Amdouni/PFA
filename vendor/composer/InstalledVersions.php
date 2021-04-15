@@ -14,24 +14,24 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => 'dev-main',
-    'version' => 'dev-main',
+    'pretty_version' => '1.0.0+no-version-set',
+    'version' => '1.0.0.0',
     'aliases' => 
     array (
     ),
-    'reference' => '9addc7104c5487839ce037f5c683805b99fc64d8',
+    'reference' => NULL,
     'name' => '__root__',
   ),
   'versions' => 
   array (
     '__root__' => 
     array (
-      'pretty_version' => 'dev-main',
-      'version' => 'dev-main',
+      'pretty_version' => '1.0.0+no-version-set',
+      'version' => '1.0.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => '9addc7104c5487839ce037f5c683805b99fc64d8',
+      'reference' => NULL,
     ),
     'behat/transliterator' => 
     array (
@@ -278,12 +278,12 @@ private static $installed = array (
     ),
     'laminas/laminas-code' => 
     array (
-      'pretty_version' => '4.1.0',
-      'version' => '4.1.0.0',
+      'pretty_version' => '4.2.0',
+      'version' => '4.2.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => '5b553c274b94af3f880cbaaf8fbab047f279a31c',
+      'reference' => 'e7e8f8a9c267520051d8026ff1da74823a3d8b97',
     ),
     'laminas/laminas-eventmanager' => 
     array (
@@ -1117,12 +1117,12 @@ private static $installed = array (
     ),
     'symfonycasts/reset-password-bundle' => 
     array (
-      'pretty_version' => 'v1.6.0',
-      'version' => '1.6.0.0',
+      'pretty_version' => 'v1.7.0',
+      'version' => '1.7.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'fef9bc5343713d2064b2e9b0caba36a62084ab96',
+      'reference' => '368a4f64fc4f8174234fc91f9b22d5016257211b',
     ),
     'twig/extra-bundle' => 
     array (
@@ -1146,7 +1146,7 @@ private static $installed = array (
     array (
       'replaced' => 
       array (
-        0 => '4.1.0',
+        0 => '4.2.0',
       ),
     ),
     'zendframework/zend-eventmanager' => 
