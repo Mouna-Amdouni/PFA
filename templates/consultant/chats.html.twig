@@ -1,0 +1,51 @@
+{% extends "admin/bars.html.twig" %}
+{% block contenpage %}
+
+    <h1>bnj {{ app.user.id }}</h1>
+
+    {% for t in topics|filter(topics => not topics.deleted)  %}
+
+
+
+
+
+
+
+
+
+
+
+                <div class="row">
+
+                    <div class="col-md-12 col-lg-6">
+                        <h2 style="color: red"><a href="{{ path('deleteT', {'id': t.id}) }}" >supprimer</a></h2>
+
+                        <div class="member-card">
+
+                            {#                            <div class="member-pic"><img class="member-pic rounded-circle" src="https://randomuser.me/api/portraits/women/77.jpg"/></div>#}
+{#                            <div#}
+{#                                    class="msg-img"#}
+{#                                    style="background-image: url(https://image.flaticon.com/icons/svg/145/145867.svg)"#}
+{#                            ></div>#}
+                            <div
+                            >
+                                {#                        style="background-image: url(https://image.flaticon.com/icons/svg/145/145867.svg)"#}
+                                <img class="msg-img" src=" {{ asset('uploads/images/'  ~ t.author.logo) }}" alt="Awesome Image">
+                            </div>
+                            <div class="member-card-details">
+                                <a href="#"><div class="member-name">{{ t.author.nomComplet }}</div></a>
+                                <div class="member-position">{{ t.name}}</div>
+                            </div>
+                            <h2 style="color: red"><a href="{{ path('topic', {'id': t.id}) }}"  >repondre</a></h2>
+
+
+                        </div>
+                    </div>
+
+
+
+
+                    {% endfor %}
+{% endblock %}
+
+
