@@ -87,10 +87,24 @@ class Association
      */
     private $telephone;
 
+
+
+
+
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $president;
+    private $Twitter;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $Instagram;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $Facebook;
 
     public function getId(): ?int
     {
@@ -269,14 +283,42 @@ class Association
         return $this;
     }
 
-    public function getPresident(): ?string
+
+
+
+
+    public function getTwitter(): ?string
     {
-        return $this->president;
+        return $this->Twitter;
     }
 
-    public function setPresident(?string $president): self
+    public function setTwitter(?string $Twitter): self
     {
-        $this->president = $president;
+        $this->Twitter = $Twitter;
+
+        return $this;
+    }
+
+    public function getInstagram(): ?string
+    {
+        return $this->Instagram;
+    }
+
+    public function setInstagram(?string $Instagram): self
+    {
+        $this->Instagram = $Instagram;
+
+        return $this;
+    }
+
+    public function getFacebook(): ?string
+    {
+        return $this->Facebook;
+    }
+
+    public function setFacebook(?string $Facebook): self
+    {
+        $this->Facebook = $Facebook;
 
         return $this;
     }

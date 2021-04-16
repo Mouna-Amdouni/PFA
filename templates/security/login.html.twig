@@ -10,11 +10,11 @@
 				<section class="login_content">
 					<form method="post">
 						<h1>Connexion</h1>
-												<h1>
-													<a class="reset_pass" href="{{path('register')}}">Créer un compte</a>
+{#												<h1>#}
+{#													<a class="reset_pass" href="{{path('register')}}">#}
 
-																										{{ "backend.login.create_acount"|trans }}
-												</h1>
+{#																										{{ "backend.login.create_acount"|trans }}#}
+{#													</a>	</h1>#}
 						<div>
 							<input type="text" value="{{ last_username }}" name="username" id="inputText" class="form-control" placeholder="Username" required autofocus>
 						</div>
@@ -24,9 +24,9 @@
 						</div>
 						<div>
 							<input type="checkbox" class="" name="_remember_me"><span>Remember me</span>
-						</div>
+						</div><br/>
 						<div>
-							<button class="btn btn-success submit" href="index.html">Log in</button>
+{#							<button class="btn btn-success submit" href="index.html">Log in</button>#}
 							<button class="btn btn-success submit" > Log in</button>
 
 							<a class="reset_pass" href="{{path('app_forgot_password_request')}}">Lost your password?</a>
@@ -35,7 +35,7 @@
 						<div class="separator">
 							 <p class="change_link">
 								{{ "backend.login.new_site"|trans }}
-								<a href="#signup" class="to_register">
+								<a href="{{path('register')}}" class="to_register">
 									{{ "backend.login.create_acount"|trans }}
 								</a>
 							</p>

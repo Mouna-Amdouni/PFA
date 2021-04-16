@@ -730,4 +730,26 @@ class User extends \App\Entity\User implements \Doctrine\ORM\Proxy\Proxy
         return parent::removeOpportunite($opportunite);
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    public function getDatenaissance()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getDatenaissance', []);
+
+        return parent::getDatenaissance();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setDatenaissance($datenaissance): void
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setDatenaissance', [$datenaissance]);
+
+        parent::setDatenaissance($datenaissance);
+    }
+
 }

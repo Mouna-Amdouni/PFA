@@ -1,24 +1,24 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-main',
+    'version' => 'dev-main',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => 'f4f6a469439f073c5f6af04c0e2e878642d6104b',
     'name' => '__root__',
   ),
   'versions' => 
   array (
     '__root__' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => 'f4f6a469439f073c5f6af04c0e2e878642d6104b',
     ),
     'behat/transliterator' => 
     array (
@@ -1092,6 +1092,15 @@
       array (
       ),
       'reference' => '9a906203efff7df59d1e0185f7aa05e631eb4ef7',
+    ),
+    'symfony/webpack-encore-bundle' => 
+    array (
+      'pretty_version' => 'v1.11.1',
+      'version' => '1.11.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '395b60a549ded8e7f77f0d551815d7555e2d9eb0',
     ),
     'symfony/yaml' => 
     array (

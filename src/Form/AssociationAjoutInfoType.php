@@ -62,6 +62,24 @@ class AssociationAjoutInfoType extends AbstractType
                     'label' => "ajouter votre site web",
                     'attr' => ['class' => 'form-control']
                 ])
+            ->add('facebook',
+                TextType::class, [
+                    'required' => true,
+                    'label' => "ajouter votre site web",
+                    'attr' => ['class' => 'form-control']
+                ])
+            ->add('instagram',
+                TextType::class, [
+                    'required' => true,
+                    'label' => "ajouter votre site web",
+                    'attr' => ['class' => 'form-control']
+                ])
+            ->add('twitter',
+                TextType::class, [
+                    'required' => true,
+                    'label' => "ajouter votre site web",
+                    'attr' => ['class' => 'form-control']
+                ])
             ->add('dateFondation',
                 DateType::class, [
 
@@ -69,22 +87,8 @@ class AssociationAjoutInfoType extends AbstractType
                    
                 ])
 
-            ->add('telephone', TelType::class, [
-                'attr' => [
-                    'class' => 'form-control',
-                    'rows' => "9",
-                    'cols' => "45"
-                ],
-                'label' => "Ajouter le numero de telephone "
-            ])
-            ->add('president', TelType::class, [
-                'attr' => [
-                    'class' => 'form-control',
-                    'rows' => "9",
-                    'cols' => "45"
-                ],
-                'label' => "Ajouter le president de votre association "
-            ])
+
+
         ;
 //        if($this->security->isGranted("ROLE_EDITORIAL")){
 //            $builder->add("valid",CheckboxType::class,[

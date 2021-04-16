@@ -585,5 +585,21 @@ class User implements UserInterface, EquatableInterface
         return $this;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getDatenaissance()
+    {
+        return $this->datenaissance;
+    }
+
+    /**
+     * @param mixed $datenaissance
+     */
+    public function setDatenaissance($datenaissance): void
+    {
+        $this->datenaissance = $datenaissance;
+    }
+
 
 }
