@@ -136,6 +136,6 @@ class __TwigTemplate_513d6e9b54fadc1e5eb9a48463e8badcfe8cde0ae83d92ea9d096869f55
     <p>c'est la page d'accueil du site </p>
 </div>
 {% endblock %}
-", "index/index.html.twig", "G:\\PFEE-main\\templates\\index\\index.html.twig");
+", "index/index.html.twig", "C:\\xampp\\htdocs\\PFA\\templates\\index\\index.html.twig");
     }
 }

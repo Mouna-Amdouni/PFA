@@ -301,6 +301,6 @@ class __TwigTemplate_9f62485ed2c04ac8e66cb1d89aec2e2ce951d02c4906b2678a9759aabce
     {% endif %}
 </div>
 
-{% endblock %}", "forum/topic.html.twig", "G:\\PFEE-main\\templates\\forum\\topic.html.twig");
+{% endblock %}", "forum/topic.html.twig", "C:\\xampp\\htdocs\\PFA\\templates\\forum\\topic.html.twig");
     }
 }

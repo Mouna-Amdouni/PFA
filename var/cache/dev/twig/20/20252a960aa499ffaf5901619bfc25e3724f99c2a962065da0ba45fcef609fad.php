@@ -135,6 +135,6 @@ class __TwigTemplate_3944a635d551341702490bbc17e6d9c055f966b23bd5cf6e6e9183c82b5
         {% endfor %}
     </tbody>
 </table>
-", "@WebProfiler/Profiler/bag.html.twig", "G:\\PFEE-main\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\bag.html.twig");
+", "@WebProfiler/Profiler/bag.html.twig", "C:\\xampp\\htdocs\\PFA\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\bag.html.twig");
     }
 }

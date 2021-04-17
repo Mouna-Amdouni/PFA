@@ -66,11 +66,13 @@ class __TwigTemplate_c3d6e82a38b31425bf60ce353099d0468f7fc336d38dad6544e8d193340
 
         // line 5
         echo "
-    <div style=\"
+<div style=\"
     color:orange;
   font-family: Lobster;
  \" id=\"video-info-section\" class=\"layer\">
-        <h1 class=\"text-center infotxt\">voir toutes les associations tunisiennes</h1>
+    <h1 class=\"text-center infotxt\">voir toutes les associations tunisiennes</h1>
+
+    <div class=\"x_content\">
         <hr style=\"  border: 0;
 
   border-bottom: 3px solid #fff;
@@ -93,31 +95,26 @@ class __TwigTemplate_c3d6e82a38b31425bf60ce353099d0468f7fc336d38dad6544e8d193340
                 <div class=\"x_panel\">
                     <div class=\"x_title\">
                         <h2>Toutes les associations</h2>
+
                         <ul class=\"nav navbar-right panel_toolbox\">
                             ";
-        // line 35
+        // line 38
         echo "                            ";
-        // line 36
+        // line 39
         echo "
                             </li>
                         </ul>
                         <div class=\"clearfix\"></div>
                     </div>
                     ";
-        // line 42
-        echo "                    ";
-        // line 43
-        echo "
-                    ";
         // line 45
+        echo "                    ";
+        // line 46
         echo "
                     ";
-        // line 47
-        echo "                    ";
         // line 48
-        echo "                    ";
-        // line 49
-        echo "                    ";
+        echo "
+                    ";
         // line 50
         echo "                    ";
         // line 51
@@ -165,32 +162,32 @@ class __TwigTemplate_c3d6e82a38b31425bf60ce353099d0468f7fc336d38dad6544e8d193340
         // line 72
         echo "                    ";
         // line 73
+        echo "                    ";
+        // line 74
+        echo "                    ";
+        // line 75
+        echo "                    ";
+        // line 76
         echo "
 
                     <div class=\"container blog-page\">
                         <div class=\"row clearfix\">
                             ";
-        // line 78
-        echo "
-                            ";
-        // line 80
-        echo "                            ";
         // line 81
-        echo "                            ";
-        // line 82
-        echo "                            ";
+        echo "
+                            ";
         // line 83
-        echo "
-                            ";
+        echo "                            ";
+        // line 84
+        echo "                            ";
         // line 85
+        echo "                            ";
+        // line 86
         echo "
                             ";
-        // line 87
-        echo "                            ";
         // line 88
-        echo "                            ";
-        // line 89
-        echo "                            ";
+        echo "
+                            ";
         // line 90
         echo "                            ";
         // line 91
@@ -206,69 +203,78 @@ class __TwigTemplate_c3d6e82a38b31425bf60ce353099d0468f7fc336d38dad6544e8d193340
         // line 96
         echo "                            ";
         // line 97
-        echo "
-
-                            ";
+        echo "                            ";
+        // line 98
+        echo "                            ";
+        // line 99
+        echo "                            ";
         // line 100
         echo "
+
                             ";
-        // line 102
-        echo "                            ";
         // line 103
+        echo "
+                            ";
+        // line 105
         echo "                            ";
-        // line 104
+        // line 106
+        echo "                            ";
+        // line 107
         echo "
 
 
 
                             ";
-        // line 109
+        // line 112
         echo "
                             ";
-        // line 111
+        // line 114
         echo "
 
 
                             ";
-        // line 115
-        echo "
-
-
-                        ";
         // line 118
+        echo "
+
+
+                            ";
+        // line 121
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_array_filter($this->env, $context["associations"], function ($__associations__) use ($context, $macros) { $context["associations"] = $__associations__; return  !twig_get_attribute($this->env, $this->source, $context["associations"], "deleted", [], "any", false, false, false, 118); }));
+        $context['_seq'] = twig_ensure_traversable(twig_array_filter($this->env, $context["associations"], function ($__associations__) use ($context, $macros) { $context["associations"] = $__associations__; return  !twig_get_attribute($this->env, $this->source, $context["associations"], "deleted", [], "any", false, false, false, 121); }));
         foreach ($context['_seq'] as $context["_key"] => $context["associations"]) {
-            // line 119
-            echo "
-                            <figure class=\"snip0013\">
-                                <img width=\"auto\" height=\"200\"
-                                     src=\" ";
             // line 122
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("uploads/images/" . twig_get_attribute($this->env, $this->source, $context["associations"], "logo", [], "any", false, false, false, 122))), "html", null, true);
+            echo "
+                                <figure class=\"snip0013\">
+                                    <img width=\"auto\" height=\"200\"
+                                         src=\" ";
+            // line 125
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("uploads/images/" . twig_get_attribute($this->env, $this->source, $context["associations"], "logo", [], "any", false, false, false, 125))), "html", null, true);
             echo "\" alt=\"sample32\"/>
-                                <div>
-                                    <a href=\"";
-            // line 124
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("UserAssoci", ["id" => twig_get_attribute($this->env, $this->source, $context["associations"], "id", [], "any", false, false, false, 124)]), "html", null, true);
-            echo "\"><i class=\" center-icon\"><h6>";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["associations"], "titre", [], "any", false, false, false, 124), "html", null, true);
-            echo "</h6></i></a>
-                                </div>
-                            </figure>
-                        ";
+                                    <div>
+                                        <a href=\"";
+            // line 127
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("UserAssoci", ["id" => twig_get_attribute($this->env, $this->source, $context["associations"], "id", [], "any", false, false, false, 127)]), "html", null, true);
+            echo "\"><i
+                                                    class=\" center-icon\"><h4>";
+            // line 128
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["associations"], "titre", [], "any", false, false, false, 128), "html", null, true);
+            echo "</h4></i></a>
+                                    </div>
+                                </figure>
+                            ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['associations'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 128
-        echo "                    </div>
+        // line 132
+        echo "                        </div>
+                    </div>
                 </div>
-            </div>
 
             </div>
-        </div></div>
-";
+        </div>
+    </div></div>
+    ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -289,7 +295,7 @@ class __TwigTemplate_c3d6e82a38b31425bf60ce353099d0468f7fc336d38dad6544e8d193340
 
     public function getDebugInfo()
     {
-        return array (  265 => 128,  253 => 124,  248 => 122,  243 => 119,  239 => 118,  234 => 115,  229 => 111,  226 => 109,  220 => 104,  218 => 103,  216 => 102,  213 => 100,  209 => 97,  207 => 96,  205 => 95,  203 => 94,  201 => 93,  199 => 92,  197 => 91,  195 => 90,  193 => 89,  191 => 88,  189 => 87,  186 => 85,  183 => 83,  181 => 82,  179 => 81,  177 => 80,  174 => 78,  168 => 73,  166 => 72,  164 => 71,  162 => 70,  160 => 69,  158 => 68,  156 => 67,  154 => 66,  152 => 65,  150 => 64,  148 => 63,  146 => 62,  144 => 61,  142 => 60,  140 => 59,  138 => 58,  136 => 57,  134 => 56,  132 => 55,  130 => 54,  128 => 53,  126 => 52,  124 => 51,  122 => 50,  120 => 49,  118 => 48,  116 => 47,  113 => 45,  110 => 43,  108 => 42,  101 => 36,  99 => 35,  68 => 5,  58 => 4,  35 => 1,);
+        return array (  270 => 132,  260 => 128,  256 => 127,  251 => 125,  246 => 122,  242 => 121,  237 => 118,  232 => 114,  229 => 112,  223 => 107,  221 => 106,  219 => 105,  216 => 103,  212 => 100,  210 => 99,  208 => 98,  206 => 97,  204 => 96,  202 => 95,  200 => 94,  198 => 93,  196 => 92,  194 => 91,  192 => 90,  189 => 88,  186 => 86,  184 => 85,  182 => 84,  180 => 83,  177 => 81,  171 => 76,  169 => 75,  167 => 74,  165 => 73,  163 => 72,  161 => 71,  159 => 70,  157 => 69,  155 => 68,  153 => 67,  151 => 66,  149 => 65,  147 => 64,  145 => 63,  143 => 62,  141 => 61,  139 => 60,  137 => 59,  135 => 58,  133 => 57,  131 => 56,  129 => 55,  127 => 54,  125 => 53,  123 => 52,  121 => 51,  119 => 50,  116 => 48,  113 => 46,  111 => 45,  104 => 39,  102 => 38,  68 => 5,  58 => 4,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -299,11 +305,13 @@ class __TwigTemplate_c3d6e82a38b31425bf60ce353099d0468f7fc336d38dad6544e8d193340
 
 {% block contenpage %}
 
-    <div style=\"
+<div style=\"
     color:orange;
   font-family: Lobster;
  \" id=\"video-info-section\" class=\"layer\">
-        <h1 class=\"text-center infotxt\">voir toutes les associations tunisiennes</h1>
+    <h1 class=\"text-center infotxt\">voir toutes les associations tunisiennes</h1>
+
+    <div class=\"x_content\">
         <hr style=\"  border: 0;
 
   border-bottom: 3px solid #fff;
@@ -326,6 +334,7 @@ class __TwigTemplate_c3d6e82a38b31425bf60ce353099d0468f7fc336d38dad6544e8d193340
                 <div class=\"x_panel\">
                     <div class=\"x_title\">
                         <h2>Toutes les associations</h2>
+
                         <ul class=\"nav navbar-right panel_toolbox\">
                             {# <li><a href=\"{{ path('newAss',{'idPA':app.user.id}) }}\" class=\"btn btn-success\">NEW</a> #}
                             {# <li><a href=\"{{ path('association_new') }}\" class=\"btn btn-success\">NEW</a> #}
@@ -411,23 +420,25 @@ class __TwigTemplate_c3d6e82a38b31425bf60ce353099d0468f7fc336d38dad6544e8d193340
 
 
 
-                        {% for associations in associations|filter(associations => not associations.deleted) %}
+                            {% for associations in associations|filter(associations => not associations.deleted) %}
 
-                            <figure class=\"snip0013\">
-                                <img width=\"auto\" height=\"200\"
-                                     src=\" {{ asset('uploads/images/'  ~ associations.logo) }}\" alt=\"sample32\"/>
-                                <div>
-                                    <a href=\"{{ path('UserAssoci',{\"id\":associations.id}) }}\"><i class=\" center-icon\"><h6>{{ associations.titre }}</h6></i></a>
-                                </div>
-                            </figure>
-                        {% endfor %}
+                                <figure class=\"snip0013\">
+                                    <img width=\"auto\" height=\"200\"
+                                         src=\" {{ asset('uploads/images/'  ~ associations.logo) }}\" alt=\"sample32\"/>
+                                    <div>
+                                        <a href=\"{{ path('UserAssoci',{\"id\":associations.id}) }}\"><i
+                                                    class=\" center-icon\"><h4>{{ associations.titre }}</h4></i></a>
+                                    </div>
+                                </figure>
+                            {% endfor %}
+                        </div>
                     </div>
                 </div>
-            </div>
 
             </div>
-        </div></div>
-{% endblock %}
-", "Visiteur/associations.html.twig", "G:\\PFEE-main\\templates\\Visiteur\\associations.html.twig");
+        </div>
+    </div></div>
+    {% endblock %}
+", "Visiteur/associations.html.twig", "C:\\xampp\\htdocs\\PFA\\templates\\Visiteur\\associations.html.twig");
     }
 }

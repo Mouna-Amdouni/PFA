@@ -471,6 +471,6 @@ class __TwigTemplate_df69167bced13ca2f83012c3e3691da1ea717dbd019482e8a319a241d81
         </div>
     {% endif %}
 {% endblock %}
-", "@WebProfiler/Collector/twig.html.twig", "G:\\PFEE-main\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\twig.html.twig");
+", "@WebProfiler/Collector/twig.html.twig", "C:\\xampp\\htdocs\\PFA\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\twig.html.twig");
     }
 }

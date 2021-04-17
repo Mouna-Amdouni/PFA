@@ -223,4 +223,31 @@ class UserController extends BaseController
         return $this->render("admin/params/changeMdpForm.html.twig", ["passwordForm" => $form->createView()]);
     }
     
+
+
+
+
+/////////////////////////////////// *********Simple User********///////////////
+    /**
+     * @Route("/ConsultantUser", name="consultant_index_user", methods={"GET"})
+
+     */
+    public function indexUserConsultants(UserRepository $userRepository)
+    {  $users=$this->userRepository->findAll();
+        return $this->render('Visiteur/consultants.html.twig', [
+            'users' => $users
+        ]);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 }

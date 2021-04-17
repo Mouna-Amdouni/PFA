@@ -79,6 +79,6 @@ class __TwigTemplate_bcbef077e26de733de2ee76f2db155f83ce168ffcb34284f0e7d76b6836
     <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token('delete' ~ opportunite.id) }}\">
     <button class=\"btn\">Delete</button>
 </form>
-", "opportunite/_delete_form.html.twig", "G:\\PFEE-main\\templates\\opportunite\\_delete_form.html.twig");
+", "opportunite/_delete_form.html.twig", "C:\\xampp\\htdocs\\PFA\\templates\\opportunite\\_delete_form.html.twig");
     }
 }

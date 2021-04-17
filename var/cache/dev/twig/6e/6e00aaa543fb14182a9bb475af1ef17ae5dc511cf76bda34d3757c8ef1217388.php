@@ -211,6 +211,6 @@ class __TwigTemplate_af48efb06132d00ce609264270fb893d120913f79c3effdc21530fb7070
 {% endblock %}
 
 
-", "consultant/chats.html.twig", "G:\\PFEE-main\\templates\\consultant\\chats.html.twig");
+", "consultant/chats.html.twig", "C:\\xampp\\htdocs\\PFA\\templates\\consultant\\chats.html.twig");
     }
 }

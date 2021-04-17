@@ -188,6 +188,6 @@ class __TwigTemplate_af2d2ba26c88eca2e4ac749c72f04ac5ad932ec5ef2f953dfcfeca4cc9c
         </div>
     </div>
 {% endblock %}
-", "admin/categorie/categorieform.html.twig", "G:\\PFEE-main\\templates\\admin\\categorie\\categorieform.html.twig");
+", "admin/categorie/categorieform.html.twig", "C:\\xampp\\htdocs\\PFA\\templates\\admin\\categorie\\categorieform.html.twig");
     }
 }

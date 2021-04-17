@@ -54,7 +54,7 @@ class __TwigTemplate_cb017ce2c4c1b59012c76abe33c78cc1087847e3c0beeed6b3c890032ae
 
     }
 
-    // line 4
+    // line 3
     public function block_contenpage($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -64,39 +64,11 @@ class __TwigTemplate_cb017ce2c4c1b59012c76abe33c78cc1087847e3c0beeed6b3c890032ae
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "contenpage"));
 
-        // line 5
-        echo "  <br/>
-    <div  id=\"carouselExampleControls\" class=\"carousel slide\" data-ride=\"carousel\">
-        <div class=\"carousel-inner\">
-            <div class=\"carousel-item active\">
+        // line 4
+        echo "
+ 
 
-                <img src=\"";
-        // line 10
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("vendors/images/r.jpg"), "html", null, true);
-        echo "\" class=\"d-block w-100\" alt=\"https://codepen.io/yordanyan1/pen/MWybwKO?editors=1000\">
-            </div>
-            <div class=\"carousel-item\">
-                <img   src=\"";
-        // line 13
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("vendors/images/acc4.png"), "html", null, true);
-        echo "\" class=\"d-block w-100\" alt=\"https://codepen.io/yordanyan1/pen/MWybwKO?editors=1000\">
-            </div>
-            <div class=\"carousel-item\">
-                <img   src=\"";
-        // line 16
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("vendors/images/acc3.png"), "html", null, true);
-        echo "\" class=\"d-block w-100\" alt=\"https://codepen.io/yordanyan1/pen/MWybwKO?editors=1000\">
-            </div>
-        </div>
-        <a class=\"carousel-control-prev\" href=\"#carouselExampleControls\" role=\"button\" data-slide=\"prev\">
-            <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>
-            <span class=\"sr-only\">Previous</span>
-        </a>
-        <a class=\"carousel-control-next\" href=\"#carouselExampleControls\" role=\"button\" data-slide=\"next\">
-            <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>
-            <span class=\"sr-only\">Next</span>
-        </a>
-    </div>
+
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -118,39 +90,19 @@ class __TwigTemplate_cb017ce2c4c1b59012c76abe33c78cc1087847e3c0beeed6b3c890032ae
 
     public function getDebugInfo()
     {
-        return array (  87 => 16,  81 => 13,  75 => 10,  68 => 5,  58 => 4,  35 => 1,);
+        return array (  68 => 4,  58 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends \"admin/bars.html.twig\" %}
 
-
 {% block contenpage %}
-  <br/>
-    <div  id=\"carouselExampleControls\" class=\"carousel slide\" data-ride=\"carousel\">
-        <div class=\"carousel-inner\">
-            <div class=\"carousel-item active\">
 
-                <img src=\"{{ asset('vendors/images/r.jpg') }}\" class=\"d-block w-100\" alt=\"https://codepen.io/yordanyan1/pen/MWybwKO?editors=1000\">
-            </div>
-            <div class=\"carousel-item\">
-                <img   src=\"{{ asset('vendors/images/acc4.png') }}\" class=\"d-block w-100\" alt=\"https://codepen.io/yordanyan1/pen/MWybwKO?editors=1000\">
-            </div>
-            <div class=\"carousel-item\">
-                <img   src=\"{{ asset('vendors/images/acc3.png') }}\" class=\"d-block w-100\" alt=\"https://codepen.io/yordanyan1/pen/MWybwKO?editors=1000\">
-            </div>
-        </div>
-        <a class=\"carousel-control-prev\" href=\"#carouselExampleControls\" role=\"button\" data-slide=\"prev\">
-            <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>
-            <span class=\"sr-only\">Previous</span>
-        </a>
-        <a class=\"carousel-control-next\" href=\"#carouselExampleControls\" role=\"button\" data-slide=\"next\">
-            <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>
-            <span class=\"sr-only\">Next</span>
-        </a>
-    </div>
+ 
+
+
 {% endblock %}
-", "admin/main.html.twig", "G:\\PFEE-main\\templates\\admin\\main.html.twig");
+", "admin/main.html.twig", "C:\\xampp\\htdocs\\PFA\\templates\\admin\\main.html.twig");
     }
 }

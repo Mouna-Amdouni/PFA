@@ -309,6 +309,6 @@ class __TwigTemplate_ce089dda95fc939a805175119c1e020ad3197c3d833f18bc1eb9fc3a63e
         <h1><strong>404</strong>  Vous n'avez pas l'acces</h1>
     {% endif %}
 {% endblock %}
-", "admin/chats/chats.html.twig", "G:\\PFEE-main\\templates\\admin\\chats\\chats.html.twig");
+", "admin/chats/chats.html.twig", "C:\\xampp\\htdocs\\PFA\\templates\\admin\\chats\\chats.html.twig");
     }
 }

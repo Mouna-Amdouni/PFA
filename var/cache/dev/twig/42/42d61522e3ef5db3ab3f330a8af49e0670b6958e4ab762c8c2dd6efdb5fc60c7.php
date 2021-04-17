@@ -326,6 +326,6 @@ class __TwigTemplate_51faec40a2ac26068902a907f4b328ea6db0c3fb106a1744acbcd2a694f
         </ul>
     </nav>
 {% endif %}
-", "@KnpPaginator/Pagination/bulma_pagination.html.twig", "G:\\PFEE-main\\vendor\\knplabs\\knp-paginator-bundle\\templates\\Pagination\\bulma_pagination.html.twig");
+", "@KnpPaginator/Pagination/bulma_pagination.html.twig", "C:\\xampp\\htdocs\\PFA\\vendor\\knplabs\\knp-paginator-bundle\\templates\\Pagination\\bulma_pagination.html.twig");
     }
 }

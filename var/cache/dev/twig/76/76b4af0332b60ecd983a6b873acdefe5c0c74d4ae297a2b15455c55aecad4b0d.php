@@ -74,18 +74,12 @@ class __TwigTemplate_f90843e591426d697fc676bdbde4503dd05a03869e953b4ad32fb31ec4c
 \t\t\t\t<section class=\"login_content\">
 \t\t\t\t\t<form method=\"post\">
 \t\t\t\t\t\t<h1>Connexion</h1>
-\t\t\t\t\t\t\t\t\t\t\t\t<h1>
-\t\t\t\t\t\t\t\t\t\t\t\t\t<a class=\"reset_pass\" href=\"";
-        // line 14
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("register");
-        echo "\">Créer un compte</a>
-
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t";
-        // line 16
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("backend.login.create_acount"), "html", null, true);
+";
+        // line 15
         echo "
-\t\t\t\t\t\t\t\t\t\t\t\t</h1>
-\t\t\t\t\t\t<div>
+";
+        // line 18
+        echo "\t\t\t\t\t\t<div>
 \t\t\t\t\t\t\t<input type=\"text\" value=\"";
         // line 19
         echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 19, $this->source); })()), "html", null, true);
@@ -100,10 +94,11 @@ class __TwigTemplate_f90843e591426d697fc676bdbde4503dd05a03869e953b4ad32fb31ec4c
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t<div>
 \t\t\t\t\t\t\t<input type=\"checkbox\" class=\"\" name=\"_remember_me\"><span>Remember me</span>
-\t\t\t\t\t\t</div>
+\t\t\t\t\t\t</div><br/>
 \t\t\t\t\t\t<div>
-\t\t\t\t\t\t\t<button class=\"btn btn-success submit\" href=\"index.html\">Log in</button>
-\t\t\t\t\t\t\t<button class=\"btn btn-success submit\" > Log in</button>
+";
+        // line 30
+        echo "\t\t\t\t\t\t\t<button class=\"btn btn-success submit\" > Log in</button>
 
 \t\t\t\t\t\t\t<a class=\"reset_pass\" href=\"";
         // line 32
@@ -117,7 +112,10 @@ class __TwigTemplate_f90843e591426d697fc676bdbde4503dd05a03869e953b4ad32fb31ec4c
         // line 37
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("backend.login.new_site"), "html", null, true);
         echo "
-\t\t\t\t\t\t\t\t<a href=\"#signup\" class=\"to_register\">
+\t\t\t\t\t\t\t\t<a href=\"";
+        // line 38
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("register");
+        echo "\" class=\"to_register\">
 \t\t\t\t\t\t\t\t\t";
         // line 39
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("backend.login.create_acount"), "html", null, true);
@@ -256,7 +254,7 @@ class __TwigTemplate_f90843e591426d697fc676bdbde4503dd05a03869e953b4ad32fb31ec4c
 
     public function getDebugInfo()
     {
-        return array (  230 => 108,  208 => 96,  204 => 95,  191 => 85,  186 => 83,  166 => 66,  157 => 59,  151 => 57,  149 => 56,  139 => 49,  135 => 48,  123 => 39,  118 => 37,  110 => 32,  98 => 23,  91 => 19,  85 => 16,  80 => 14,  69 => 5,  59 => 4,  36 => 1,);
+        return array (  228 => 108,  206 => 96,  202 => 95,  189 => 85,  184 => 83,  164 => 66,  155 => 59,  149 => 57,  147 => 56,  137 => 49,  133 => 48,  121 => 39,  117 => 38,  113 => 37,  105 => 32,  101 => 30,  92 => 23,  85 => 19,  82 => 18,  79 => 15,  69 => 5,  59 => 4,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -273,11 +271,11 @@ class __TwigTemplate_f90843e591426d697fc676bdbde4503dd05a03869e953b4ad32fb31ec4c
 \t\t\t\t<section class=\"login_content\">
 \t\t\t\t\t<form method=\"post\">
 \t\t\t\t\t\t<h1>Connexion</h1>
-\t\t\t\t\t\t\t\t\t\t\t\t<h1>
-\t\t\t\t\t\t\t\t\t\t\t\t\t<a class=\"reset_pass\" href=\"{{path('register')}}\">Créer un compte</a>
+{#\t\t\t\t\t\t\t\t\t\t\t\t<h1>#}
+{#\t\t\t\t\t\t\t\t\t\t\t\t\t<a class=\"reset_pass\" href=\"{{path('register')}}\">#}
 
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t{{ \"backend.login.create_acount\"|trans }}
-\t\t\t\t\t\t\t\t\t\t\t\t</h1>
+{#\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t{{ \"backend.login.create_acount\"|trans }}#}
+{#\t\t\t\t\t\t\t\t\t\t\t\t\t</a>\t</h1>#}
 \t\t\t\t\t\t<div>
 \t\t\t\t\t\t\t<input type=\"text\" value=\"{{ last_username }}\" name=\"username\" id=\"inputText\" class=\"form-control\" placeholder=\"Username\" required autofocus>
 \t\t\t\t\t\t</div>
@@ -287,9 +285,9 @@ class __TwigTemplate_f90843e591426d697fc676bdbde4503dd05a03869e953b4ad32fb31ec4c
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t<div>
 \t\t\t\t\t\t\t<input type=\"checkbox\" class=\"\" name=\"_remember_me\"><span>Remember me</span>
-\t\t\t\t\t\t</div>
+\t\t\t\t\t\t</div><br/>
 \t\t\t\t\t\t<div>
-\t\t\t\t\t\t\t<button class=\"btn btn-success submit\" href=\"index.html\">Log in</button>
+{#\t\t\t\t\t\t\t<button class=\"btn btn-success submit\" href=\"index.html\">Log in</button>#}
 \t\t\t\t\t\t\t<button class=\"btn btn-success submit\" > Log in</button>
 
 \t\t\t\t\t\t\t<a class=\"reset_pass\" href=\"{{path('app_forgot_password_request')}}\">Lost your password?</a>
@@ -298,7 +296,7 @@ class __TwigTemplate_f90843e591426d697fc676bdbde4503dd05a03869e953b4ad32fb31ec4c
 \t\t\t\t\t\t<div class=\"separator\">
 \t\t\t\t\t\t\t <p class=\"change_link\">
 \t\t\t\t\t\t\t\t{{ \"backend.login.new_site\"|trans }}
-\t\t\t\t\t\t\t\t<a href=\"#signup\" class=\"to_register\">
+\t\t\t\t\t\t\t\t<a href=\"{{path('register')}}\" class=\"to_register\">
 \t\t\t\t\t\t\t\t\t{{ \"backend.login.create_acount\"|trans }}
 \t\t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t</p>
@@ -369,6 +367,6 @@ class __TwigTemplate_f90843e591426d697fc676bdbde4503dd05a03869e953b4ad32fb31ec4c
 
 {% endblock %}
 {% block javascripts %}{% endblock %}
-", "security/login.html.twig", "G:\\PFEE-main\\templates\\security\\login.html.twig");
+", "security/login.html.twig", "C:\\xampp\\htdocs\\PFA\\templates\\security\\login.html.twig");
     }
 }

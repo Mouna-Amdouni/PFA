@@ -122,6 +122,6 @@ class __TwigTemplate_c3de0a0cba03cb401addfe740b0b08e977353d1811fc3ac0b15be932e4c
         {% endfor %}
     </tbody>
 </table>
-", "@WebProfiler/Profiler/table.html.twig", "G:\\PFEE-main\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\table.html.twig");
+", "@WebProfiler/Profiler/table.html.twig", "C:\\xampp\\htdocs\\PFA\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\table.html.twig");
     }
 }

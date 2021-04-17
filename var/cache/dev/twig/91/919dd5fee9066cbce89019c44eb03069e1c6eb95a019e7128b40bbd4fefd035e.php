@@ -197,6 +197,6 @@ class __TwigTemplate_8fa1818ea9faab226df0a71606f4b964728b8ceea3af107ee27774a1976
         {% endif %}
     </div>
 {% endif %}
-", "@KnpPaginator/Pagination/sliding.html.twig", "G:\\PFEE-main\\vendor\\knplabs\\knp-paginator-bundle\\templates\\Pagination\\sliding.html.twig");
+", "@KnpPaginator/Pagination/sliding.html.twig", "C:\\xampp\\htdocs\\PFA\\vendor\\knplabs\\knp-paginator-bundle\\templates\\Pagination\\sliding.html.twig");
     }
 }

@@ -343,6 +343,6 @@ class __TwigTemplate_9bf728d71451b18e40ad9effb61760a129e843ce8e2d3e8c78f41d7136d
         {% endif %}
     </ul>
 {% endif %}
-", "@KnpPaginator/Pagination/foundation_v5_pagination.html.twig", "G:\\PFEE-main\\vendor\\knplabs\\knp-paginator-bundle\\templates\\Pagination\\foundation_v5_pagination.html.twig");
+", "@KnpPaginator/Pagination/foundation_v5_pagination.html.twig", "C:\\xampp\\htdocs\\PFA\\vendor\\knplabs\\knp-paginator-bundle\\templates\\Pagination\\foundation_v5_pagination.html.twig");
     }
 }

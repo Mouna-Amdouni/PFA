@@ -133,6 +133,6 @@ class __TwigTemplate_0faaabd87f97e6ac66edbe4b203aec7e925d3d6e65661d5b4666615a61c
 
     <a href=\"{{ path('opportunite_index') }}\">back to list</a>
 {% endblock %}
-", "opportunite/new.html.twig", "G:\\PFEE-main\\templates\\opportunite\\new.html.twig");
+", "opportunite/new.html.twig", "C:\\xampp\\htdocs\\PFA\\templates\\opportunite\\new.html.twig");
     }
 }

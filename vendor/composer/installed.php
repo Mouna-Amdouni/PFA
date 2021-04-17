@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'f4f6a469439f073c5f6af04c0e2e878642d6104b',
+    'reference' => '714827b5a76426fcfcf837e684fbcc23d9e28df2',
     'name' => '__root__',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'f4f6a469439f073c5f6af04c0e2e878642d6104b',
+      'reference' => '714827b5a76426fcfcf837e684fbcc23d9e28df2',
     ),
     'behat/transliterator' => 
     array (
@@ -1092,15 +1092,6 @@
       array (
       ),
       'reference' => '9a906203efff7df59d1e0185f7aa05e631eb4ef7',
-    ),
-    'symfony/webpack-encore-bundle' => 
-    array (
-      'pretty_version' => 'v1.11.1',
-      'version' => '1.11.1.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '395b60a549ded8e7f77f0d551815d7555e2d9eb0',
     ),
     'symfony/yaml' => 
     array (

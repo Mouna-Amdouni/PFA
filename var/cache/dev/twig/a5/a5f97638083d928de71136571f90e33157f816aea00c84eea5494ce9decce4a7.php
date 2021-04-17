@@ -710,6 +710,6 @@ class __TwigTemplate_bf0f5d939b32cd06fd6bdf29eeb5fb8c80e6924d65241f22a890554377b
         </div>
     {% endfor %}
 {% endblock %}
-", "@WebProfiler/Collector/mailer.html.twig", "G:\\PFEE-main\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\mailer.html.twig");
+", "@WebProfiler/Collector/mailer.html.twig", "C:\\xampp\\htdocs\\PFA\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\mailer.html.twig");
     }
 }

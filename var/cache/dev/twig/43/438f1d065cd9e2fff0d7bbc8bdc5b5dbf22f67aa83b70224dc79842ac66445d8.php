@@ -277,6 +277,6 @@ class __TwigTemplate_1eb31ae77fb78b754a635f24098422ed7c6deb8bb0d66488cc3c6140888
         </div>
     </div>
 {% endblock %}
-", "admin/categorie/categorie.html.twig", "G:\\PFEE-main\\templates\\admin\\categorie\\categorie.html.twig");
+", "admin/categorie/categorie.html.twig", "C:\\xampp\\htdocs\\PFA\\templates\\admin\\categorie\\categorie.html.twig");
     }
 }

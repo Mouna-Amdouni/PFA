@@ -172,6 +172,7 @@ return [
                     .'|logout(*:1768)'
                     .'|test1(*:1782)'
                     .'|changepass(*:1801)'
+                    .'|ConsultantUser(*:1824)'
                 .')'
             .')/?$}sDu',
     ],
@@ -257,8 +258,9 @@ return [
         1750 => [[['_route' => 'app_admin_groupaction_user', '_controller' => 'App\\Controller\\UserController::groupAction', '_locale' => 'en'], ['_locale'], null, null, false, false, null]],
         1768 => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout', '_locale' => 'en'], ['_locale'], null, null, false, false, null]],
         1782 => [[['_route' => 'test1', '_controller' => 'App\\Controller\\TestController::index', '_locale' => 'en'], ['_locale'], null, null, false, false, null]],
-        1801 => [
-            [['_route' => 'changepass', '_controller' => 'App\\Controller\\UserController::changePass', '_locale' => 'en'], ['_locale'], null, null, false, false, null],
+        1801 => [[['_route' => 'changepass', '_controller' => 'App\\Controller\\UserController::changePass', '_locale' => 'en'], ['_locale'], null, null, false, false, null]],
+        1824 => [
+            [['_route' => 'consultant_index_user', '_controller' => 'App\\Controller\\UserController::indexUserConsultants', '_locale' => 'en'], ['_locale'], ['GET' => 0], null, false, false, null],
             [null, null, null, null, false, false, 0],
         ],
     ],

@@ -149,6 +149,6 @@ class __TwigTemplate_56fb927fc75ba43064dd057ea0e7b688468d5d7b95c7625c8a2496b7bbb
 \t\t</div>
 \t</div>
 {% endblock %}
-", "reset_password/check_email.html.twig", "G:\\PFEE-main\\templates\\reset_password\\check_email.html.twig");
+", "reset_password/check_email.html.twig", "C:\\xampp\\htdocs\\PFA\\templates\\reset_password\\check_email.html.twig");
     }
 }

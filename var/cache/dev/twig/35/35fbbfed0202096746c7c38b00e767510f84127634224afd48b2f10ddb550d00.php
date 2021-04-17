@@ -146,6 +146,6 @@ class __TwigTemplate_a98ff5295b7b85b73592a717d18dd81609b4c71cbd074cceab59247b8fb
         </div>
     </div>
 {% endblock %}
-", "@WebProfiler/Profiler/toolbar_redirect.html.twig", "G:\\PFEE-main\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\toolbar_redirect.html.twig");
+", "@WebProfiler/Profiler/toolbar_redirect.html.twig", "C:\\xampp\\htdocs\\PFA\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\toolbar_redirect.html.twig");
     }
 }

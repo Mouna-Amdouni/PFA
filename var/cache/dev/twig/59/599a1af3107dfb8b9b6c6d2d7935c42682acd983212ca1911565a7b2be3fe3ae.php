@@ -564,6 +564,6 @@ class __TwigTemplate_a12d383e72b3c3988ca228ff6b3ef4476cadc65885cbf210c30a0c8974e
 
 {#</body>#}
 {#</html>#}
-", "registration/register.html.twig", "G:\\PFEE-main\\templates\\registration\\register.html.twig");
+", "registration/register.html.twig", "C:\\xampp\\htdocs\\PFA\\templates\\registration\\register.html.twig");
     }
 }

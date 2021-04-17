@@ -90,5 +90,6 @@ return [
     'app_admin_changepswd' => [['_locale'], ['_controller' => 'App\\Controller\\UserController::changePswd', '_locale' => 'en'], ['_locale' => 'en|fr'], [['text', '/admin/user/changePassword'], ['variable', '/', 'en|fr', '_locale', true]], [], []],
     'app_admin_groupaction_user' => [['_locale'], ['_controller' => 'App\\Controller\\UserController::groupAction', '_locale' => 'en'], ['_locale' => 'en|fr'], [['text', '/admin/user/groupaction'], ['variable', '/', 'en|fr', '_locale', true]], [], []],
     'changepass' => [['_locale'], ['_controller' => 'App\\Controller\\UserController::changePass', '_locale' => 'en'], ['_locale' => 'en|fr'], [['text', '/changepass'], ['variable', '/', 'en|fr', '_locale', true]], [], []],
+    'consultant_index_user' => [['_locale'], ['_controller' => 'App\\Controller\\UserController::indexUserConsultants', '_locale' => 'en'], ['_locale' => 'en|fr'], [['text', '/ConsultantUser'], ['variable', '/', 'en|fr', '_locale', true]], [], []],
     'index' => [[], ['_controller' => 'App\\Controller\\IndexController::index'], [], [['text', '/']], [], []],
 ];

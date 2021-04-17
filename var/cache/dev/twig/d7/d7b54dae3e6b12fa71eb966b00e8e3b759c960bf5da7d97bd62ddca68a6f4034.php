@@ -84,6 +84,6 @@ class __TwigTemplate_2b4efb578d885b8fbf70b8bf1a57af24b3e833bddf43015bea1c9764425
     {{ form_widget(form) }}
     <button class=\"btn\">{{ button_label|default('Save') }}</button>
 {{ form_end(form) }}
-", "opportunite/_form.html.twig", "G:\\PFEE-main\\templates\\opportunite\\_form.html.twig");
+", "opportunite/_form.html.twig", "C:\\xampp\\htdocs\\PFA\\templates\\opportunite\\_form.html.twig");
     }
 }

@@ -254,6 +254,6 @@ class __TwigTemplate_c20885e559f8ea7ae2b697347330595aae788ba05ab79bcdd976e1cecab
 
     <a href=\"{{ path('opportunite_new') }}\">Create new</a>
 {% endblock %}
-", "opportunite/index.html.twig", "G:\\PFEE-main\\templates\\opportunite\\index.html.twig");
+", "opportunite/index.html.twig", "C:\\xampp\\htdocs\\PFA\\templates\\opportunite\\index.html.twig");
     }
 }

@@ -144,6 +144,6 @@ class __TwigTemplate_ccba37c388a98f44a6c19df842f0889eed51ca7ccc2b216501a637194ed
 
 
 {% endfor %}
-{% endblock %}", "forum/all.html.twig", "G:\\PFEE-main\\templates\\forum\\all.html.twig");
+{% endblock %}", "forum/all.html.twig", "C:\\xampp\\htdocs\\PFA\\templates\\forum\\all.html.twig");
     }
 }

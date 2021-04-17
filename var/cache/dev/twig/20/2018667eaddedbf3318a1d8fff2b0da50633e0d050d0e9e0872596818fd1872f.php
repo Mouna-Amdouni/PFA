@@ -203,6 +203,6 @@ class __TwigTemplate_a693825025dda24a302ed31530ac87a6919eeead7ebfebe08b0cbe7f9f0
 {% block summernote %}
     \$('.summernote').summernote('disable');
 {% endblock %}
-", "admin/blog/oldpostform.html.twig", "G:\\PFEE-main\\templates\\admin\\blog\\oldpostform.html.twig");
+", "admin/blog/oldpostform.html.twig", "C:\\xampp\\htdocs\\PFA\\templates\\admin\\blog\\oldpostform.html.twig");
     }
 }

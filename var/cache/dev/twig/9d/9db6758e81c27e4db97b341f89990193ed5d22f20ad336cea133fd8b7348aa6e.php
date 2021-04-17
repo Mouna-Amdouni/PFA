@@ -190,6 +190,6 @@ class __TwigTemplate_6b52cca2bc541d0c045f8b7fce9d0233a2aa34324637c70a5d003c89072
         </div>
     </div>
 {% endblock %}
-", "admin/user/editprofile.html.twig", "G:\\PFEE-main\\templates\\admin\\user\\editprofile.html.twig");
+", "admin/user/editprofile.html.twig", "C:\\xampp\\htdocs\\PFA\\templates\\admin\\user\\editprofile.html.twig");
     }
 }

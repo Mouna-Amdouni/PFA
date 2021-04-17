@@ -256,6 +256,6 @@ class __TwigTemplate_01c67edb7ead9decf7bd0833f7c6c4a0531a621e4662142fb613944af49
         </div>
     </div>
 {% endblock %}
-", "admin/blog/historique.html.twig", "G:\\PFEE-main\\templates\\admin\\blog\\historique.html.twig");
+", "admin/blog/historique.html.twig", "C:\\xampp\\htdocs\\PFA\\templates\\admin\\blog\\historique.html.twig");
     }
 }

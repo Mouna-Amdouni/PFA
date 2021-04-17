@@ -81,9 +81,10 @@ class __TwigTemplate_f4cabb8587f907883c6c8f698170c27770f1e471187785a239b546a8c05
                 <div class=\"x_panel\">
                     <div class=\"x_title\">
                         <h2>Liste des associations</h2>
+
                         <ul class=\"nav navbar-right panel_toolbox\">
 ";
-        // line 24
+        // line 25
         echo "
                             </li>
                         </ul>
@@ -92,10 +93,10 @@ class __TwigTemplate_f4cabb8587f907883c6c8f698170c27770f1e471187785a239b546a8c05
                     <div class=\"x_content\">
                         <div class=\"row\">
 ";
-        // line 41
+        // line 42
         echo "
 ";
-        // line 43
+        // line 44
         echo "                            <table id=\"example\" class=\"display table table-striped table-bordered dataminetables\" >
                                 <thead>
                                 <th><input type=\"checkbox\" id=\"select_all\" name=\"select_all\"></th>
@@ -111,72 +112,72 @@ class __TwigTemplate_f4cabb8587f907883c6c8f698170c27770f1e471187785a239b546a8c05
                                 <th>Modifier</th>
                                 <th>Ajouter d'autre informations</th>
 ";
-        // line 58
+        // line 59
         echo "                                </thead>
                                 <tbody>
                                                                 ";
-        // line 60
+        // line 61
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_array_filter($this->env, $context["associations"], function ($__associations__) use ($context, $macros) { $context["associations"] = $__associations__; return  !twig_get_attribute($this->env, $this->source, $context["associations"], "deleted", [], "any", false, false, false, 60); }));
+        $context['_seq'] = twig_ensure_traversable(twig_array_filter($this->env, $context["associations"], function ($__associations__) use ($context, $macros) { $context["associations"] = $__associations__; return  !twig_get_attribute($this->env, $this->source, $context["associations"], "deleted", [], "any", false, false, false, 61); }));
         foreach ($context['_seq'] as $context["_key"] => $context["associations"]) {
-            // line 61
+            // line 62
             echo "                                                                    ";
-            if ((0 === twig_compare(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 61, $this->source); })()), "user", [], "any", false, false, false, 61), "id", [], "any", false, false, false, 61), twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["associations"], "UserA", [], "any", false, false, false, 61), "id", [], "any", false, false, false, 61)))) {
-                // line 62
+            if ((0 === twig_compare(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 62, $this->source); })()), "user", [], "any", false, false, false, 62), "id", [], "any", false, false, false, 62), twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["associations"], "UserA", [], "any", false, false, false, 62), "id", [], "any", false, false, false, 62)))) {
+                // line 63
                 echo "
                                                                     <tr>
                                                                         <td><input type=\"checkbox\" class=\"chkgrp\" name=\"chkgrp[]\" value=\"";
-                // line 64
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["associations"], "id", [], "any", false, false, false, 64), "html", null, true);
+                // line 65
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["associations"], "id", [], "any", false, false, false, 65), "html", null, true);
                 echo "\"></td>
                                                                         <td>";
-                // line 65
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["associations"], "titre", [], "any", false, false, false, 65), "html", null, true);
-                echo "</td>
-                                                                                        <td>";
                 // line 66
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["associations"], "siege", [], "any", false, false, false, 66), "html", null, true);
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["associations"], "titre", [], "any", false, false, false, 66), "html", null, true);
                 echo "</td>
                                                                                         <td>";
                 // line 67
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["associations"], "but", [], "any", false, false, false, 67), "html", null, true);
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["associations"], "siege", [], "any", false, false, false, 67), "html", null, true);
+                echo "</td>
+                                                                                        <td>";
+                // line 68
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["associations"], "but", [], "any", false, false, false, 68), "html", null, true);
                 echo "</td>
                                                                                      <td>   <img width=\"50px\" height=\"50px\" src=\" ";
-                // line 68
-                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("uploads/images/" . twig_get_attribute($this->env, $this->source, $context["associations"], "logo", [], "any", false, false, false, 68))), "html", null, true);
+                // line 69
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("uploads/images/" . twig_get_attribute($this->env, $this->source, $context["associations"], "logo", [], "any", false, false, false, 69))), "html", null, true);
                 echo "\" alt=\"Awesome Image\">
                                                                                      </td>
                                                                                         <td>";
-                // line 70
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["associations"], "adresse", [], "any", false, false, false, 70), "html", null, true);
+                // line 71
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["associations"], "adresse", [], "any", false, false, false, 71), "html", null, true);
                 echo "</td>
                                                                                         <td>";
-                // line 71
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["associations"], "nombreMembre", [], "any", false, false, false, 71), "html", null, true);
+                // line 72
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["associations"], "nombreMembre", [], "any", false, false, false, 72), "html", null, true);
                 echo "</td>
 ";
-                // line 73
+                // line 74
                 echo "                                                                        <td><a class=\"btn btn-primary\" href=\"";
-                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("association_editP", ["id" => twig_get_attribute($this->env, $this->source, $context["associations"], "id", [], "any", false, false, false, 73)]), "html", null, true);
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("association_editP", ["id" => twig_get_attribute($this->env, $this->source, $context["associations"], "id", [], "any", false, false, false, 74)]), "html", null, true);
                 echo "\"><i class=\"fa fa-edit\"></i></a></td>
                                                                         <td><a class=\"btn btn-primary\" href=\"";
-                // line 74
-                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("association_ajoutInfo", ["id" => twig_get_attribute($this->env, $this->source, $context["associations"], "id", [], "any", false, false, false, 74)]), "html", null, true);
+                // line 75
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("association_ajoutInfo", ["id" => twig_get_attribute($this->env, $this->source, $context["associations"], "id", [], "any", false, false, false, 75)]), "html", null, true);
                 echo "\"><i class=\"fa fa-plus\"></i></a></td>
 
                                                                         ";
-                // line 84
+                // line 85
                 echo "                                                                    </tr>
                                                                     ";
             }
-            // line 86
+            // line 87
             echo "
                                                                 ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['associations'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 88
+        // line 89
         echo "                                </tbody>
                             </table>
                         </div>
@@ -206,7 +207,7 @@ class __TwigTemplate_f4cabb8587f907883c6c8f698170c27770f1e471187785a239b546a8c05
 
     public function getDebugInfo()
     {
-        return array (  180 => 88,  173 => 86,  169 => 84,  164 => 74,  159 => 73,  155 => 71,  151 => 70,  146 => 68,  142 => 67,  138 => 66,  134 => 65,  130 => 64,  126 => 62,  123 => 61,  119 => 60,  115 => 58,  99 => 43,  96 => 41,  87 => 24,  68 => 5,  58 => 4,  35 => 2,);
+        return array (  181 => 89,  174 => 87,  170 => 85,  165 => 75,  160 => 74,  156 => 72,  152 => 71,  147 => 69,  143 => 68,  139 => 67,  135 => 66,  131 => 65,  127 => 63,  124 => 62,  120 => 61,  116 => 59,  100 => 44,  97 => 42,  88 => 25,  68 => 5,  58 => 4,  35 => 2,);
     }
 
     public function getSourceContext()
@@ -231,6 +232,7 @@ class __TwigTemplate_f4cabb8587f907883c6c8f698170c27770f1e471187785a239b546a8c05
                 <div class=\"x_panel\">
                     <div class=\"x_title\">
                         <h2>Liste des associations</h2>
+
                         <ul class=\"nav navbar-right panel_toolbox\">
 {#                            <li><a href=\"{{ path('newAss',{'idPA':app.user.id}) }}\" class=\"btn btn-success\">NEW</a>#}
 {#                            <li><a href=\"{{ path('association_new') }}\" class=\"btn btn-success\">NEW</a>#}
@@ -307,6 +309,6 @@ class __TwigTemplate_f4cabb8587f907883c6c8f698170c27770f1e471187785a239b546a8c05
         </div>
     </div>
 {% endblock %}
-", "proprietaireAssociation/association/association.html.twig", "G:\\PFEE-main\\templates\\proprietaireAssociation\\association\\association.html.twig");
+", "proprietaireAssociation/association/association.html.twig", "C:\\xampp\\htdocs\\PFA\\templates\\proprietaireAssociation\\association\\association.html.twig");
     }
 }

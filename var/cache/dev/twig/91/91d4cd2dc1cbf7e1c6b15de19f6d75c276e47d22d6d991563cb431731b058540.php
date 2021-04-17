@@ -96,6 +96,6 @@ class __TwigTemplate_98fe4795f838f962790a9ba313ec5fa44c265d1fd0919011e0d0fcba39b
 
 {% block contenpage %}
     <h1>main</h1>
-{% endblock %}", "admin/content.html.twig", "G:\\PFEE-main\\templates\\admin\\content.html.twig");
+{% endblock %}", "admin/content.html.twig", "C:\\xampp\\htdocs\\PFA\\templates\\admin\\content.html.twig");
     }
 }

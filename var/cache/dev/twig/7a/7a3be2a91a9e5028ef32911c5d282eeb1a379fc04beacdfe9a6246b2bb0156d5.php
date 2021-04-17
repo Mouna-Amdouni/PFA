@@ -249,6 +249,6 @@ class __TwigTemplate_6d437615b0c0055a8756bb89258bbf7bbbe98f20fd127371975f64b7aab
 
     {{ include('opportunite/_delete_form.html.twig') }}
 {% endblock %}
-", "opportunite/show.html.twig", "G:\\PFEE-main\\templates\\opportunite\\show.html.twig");
+", "opportunite/show.html.twig", "C:\\xampp\\htdocs\\PFA\\templates\\opportunite\\show.html.twig");
     }
 }

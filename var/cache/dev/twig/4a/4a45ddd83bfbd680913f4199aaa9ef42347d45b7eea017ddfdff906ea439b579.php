@@ -280,6 +280,6 @@ class __TwigTemplate_a3d0d08b3bc5620a11d6271e4517bac6ef58d532d35cc39010be45bb42f
    
 </script>
 {% endblock %}
-", "forum/index.html.twig", "G:\\PFEE-main\\templates\\forum\\index.html.twig");
+", "forum/index.html.twig", "C:\\xampp\\htdocs\\PFA\\templates\\forum\\index.html.twig");
     }
 }

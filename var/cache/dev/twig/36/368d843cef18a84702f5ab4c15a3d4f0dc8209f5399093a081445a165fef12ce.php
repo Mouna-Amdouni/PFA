@@ -92,6 +92,6 @@ class __TwigTemplate_f055866da90c6191359a5537bca5737bf2425309b53080417f657254490
 
 <p>
     Cheers!
-</p>", "reset_password/email.html.twig", "G:\\PFEE-main\\templates\\reset_password\\email.html.twig");
+</p>", "reset_password/email.html.twig", "C:\\xampp\\htdocs\\PFA\\templates\\reset_password\\email.html.twig");
     }
 }

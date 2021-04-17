@@ -898,6 +898,6 @@ class __TwigTemplate_0afaa5e2fd795af4549a4c2208c7e5f093e8931e042e326c87ac2cea7d8
         </tbody>
     </table>
 {% endmacro %}
-", "@WebProfiler/Collector/translation.html.twig", "G:\\PFEE-main\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\translation.html.twig");
+", "@WebProfiler/Collector/translation.html.twig", "C:\\xampp\\htdocs\\PFA\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\translation.html.twig");
     }
 }

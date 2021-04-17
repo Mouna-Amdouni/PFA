@@ -172,6 +172,6 @@ class __TwigTemplate_0ba46ade19b5362a5aacc603a466c14e45a1f4c1d6185001d9e28073df9
 \t\t</div>
 \t</div>
 {% endblock %}
-", "reset_password/reset.html.twig", "G:\\PFEE-main\\templates\\reset_password\\reset.html.twig");
+", "reset_password/reset.html.twig", "C:\\xampp\\htdocs\\PFA\\templates\\reset_password\\reset.html.twig");
     }
 }

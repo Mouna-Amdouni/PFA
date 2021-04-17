@@ -1,0 +1,78 @@
+{% extends "admin/bars.html.twig" %}
+
+
+{% block contenpage %}
+
+
+<div style="
+    color:orange;
+  font-family: Lobster;
+ " id="video-info-section" class="layer">
+    <h1 class="text-center infotxt">Voir tous nos consultants</h1>
+
+    <div class="x_content">
+        <hr style="  border: 0;
+
+  border-bottom: 3px solid #fff;
+  border-radius: 100%;
+  width: 50%;
+"></hr>
+        <h2 style="color:#000;" ed class="text-center txt1">Liste des consultants</h2>
+    </div>
+    <div style="background-color: white" class="">
+        <div class="page-title">
+            <div class="title_left">
+
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>Tous les consultants</h2>
+
+                        <div class="clearfix"></div>
+                    </div>
+
+
+
+                    <div class="container blog-page">
+                        <div class="row clearfix">
+
+
+
+
+
+                            {% for users in users|filter(users => not users.deleted) %}
+                                {%  for r in users.roles %}
+                                    {% if r is same as "ROLE_CONSULTANT" %}
+
+                                <figure class="snip0013">
+
+                                    <img width="auto" height="200"
+                                         src=" {{ asset('uploads/images/'  ~ users.logo) }}" alt="sample32"/>
+                                    <div>
+                                        <a href="{{ path('UserAssoci',{"id":users.id}) }}"><i
+                                                    class=" center-icon"><h4>{{ users.nomComplet }}</h4></i>
+                                        </br>
+                                            <i class=" center-icon"><h5>{{ users.email }}</h5></i>
+                                        </a>
+
+                                    </div>
+                                </figure>
+                                       
+
+                                    {% endif %}
+                                {% endfor %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div></div>
+    {% endblock %}

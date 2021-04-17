@@ -201,6 +201,6 @@ class __TwigTemplate_6ef45ef48f1cf93ac3b3c01e867b8f67287a47dfb50b3ec836f64e1cdf2
         </div>
     </div>
 {% endif %}
-", "@KnpPaginator/Pagination/tailwindcss_pagination.html.twig", "G:\\PFEE-main\\vendor\\knplabs\\knp-paginator-bundle\\templates\\Pagination\\tailwindcss_pagination.html.twig");
+", "@KnpPaginator/Pagination/tailwindcss_pagination.html.twig", "C:\\xampp\\htdocs\\PFA\\vendor\\knplabs\\knp-paginator-bundle\\templates\\Pagination\\tailwindcss_pagination.html.twig");
     }
 }
