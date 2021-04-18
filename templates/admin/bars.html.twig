@@ -92,10 +92,8 @@
                         {% endif %}
                         {% if is_granted("ROLE_CONSULTANT") %}
 
-                            <li><a><i class="glyphicon glyphicon-envelope"></i> Chats <span class="fa fa-chevron-down"></span></a>
-                                <ul class="nav child_menu">
-                                    <li><a href="{{ path('forumsall') }}">{{ "backend.menu.manage"|trans }} vos messages</a></li>
-                                </ul>
+                            <li><a href="{{ path('forumsall') }}"><i class="glyphicon glyphicon-envelope"></i> Conversations</a>
+
                             </li>
 
                         {% endif %}
@@ -120,10 +118,8 @@
                         {% endif %}
                         {% if is_granted("ROLE_PASSOCIATION") %}
 
-                            <li><a><i class="fa fa-user"></i>Chatter avec un consultant <span class="fa fa-chevron-down"></span></a>
-                                <ul class="nav child_menu">
-                                    <li><a href="{{ path('forums') }}">{{ "backend.menu.manage"|trans }} vos associations</a></li>
-                                </ul>
+                            <li><a href="{{ path('forums') }}"><i class="glyphicon glyphicon-envelope"></i>  Boite à Reception </a>
+
                             </li>
 
                         {% endif %}

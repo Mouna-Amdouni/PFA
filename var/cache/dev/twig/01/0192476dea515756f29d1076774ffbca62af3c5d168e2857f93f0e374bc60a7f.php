@@ -65,36 +65,49 @@ class __TwigTemplate_ccba37c388a98f44a6c19df842f0889eed51ca7ccc2b216501a637194ed
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "contenpage"));
 
         // line 3
-        echo "<h1>bnj ";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 3, $this->source); })()), "user", [], "any", false, false, false, 3), "id", [], "any", false, false, false, 3), "html", null, true);
-        echo "</h1>
-    <a href=\"";
+        echo "    <link rel=\"stylesheet\" href=\"https://www.w3schools.com/w3css/4/w3.css\">
+<h1>Salut ";
         // line 4
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 4, $this->source); })()), "user", [], "any", false, false, false, 4), "nomComplet", [], "any", false, false, false, 4), "html", null, true);
+        echo "</h1>
+    <a style=\"float : right ; background-color: blue ; color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;\" href=\"";
+        // line 9
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("newTopic");
-        echo "\"><span>Taper votre sujet ou bien votre probleme à poser</span></a>
+        echo "\"><span>Créer Une nouvelle Conversation</span></a>
+
+    </br>
+    </br>
+    </br>
+    <div class=\"w3-container\">
+    <h2>Liste de vos anciennes conversations</h2>
+
+    <ul class=\"w3-ul w3-border\">
 
     ";
-        // line 6
+        // line 19
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_array_filter($this->env, (isset($context["topics"]) || array_key_exists("topics", $context) ? $context["topics"] : (function () { throw new RuntimeError('Variable "topics" does not exist.', 6, $this->source); })()), function ($__topics__) use ($context, $macros) { $context["topics"] = $__topics__; return  !twig_get_attribute($this->env, $this->source, (isset($context["topics"]) || array_key_exists("topics", $context) ? $context["topics"] : (function () { throw new RuntimeError('Variable "topics" does not exist.', 6, $this->source); })()), "deleted", [], "any", false, false, false, 6); }));
+        $context['_seq'] = twig_ensure_traversable(twig_array_filter($this->env, (isset($context["topics"]) || array_key_exists("topics", $context) ? $context["topics"] : (function () { throw new RuntimeError('Variable "topics" does not exist.', 19, $this->source); })()), function ($__topics__) use ($context, $macros) { $context["topics"] = $__topics__; return  !twig_get_attribute($this->env, $this->source, (isset($context["topics"]) || array_key_exists("topics", $context) ? $context["topics"] : (function () { throw new RuntimeError('Variable "topics" does not exist.', 19, $this->source); })()), "deleted", [], "any", false, false, false, 19); }));
         foreach ($context['_seq'] as $context["_key"] => $context["t"]) {
-            // line 7
+            // line 20
             echo "
     ";
-            // line 8
-            if ((twig_get_attribute($this->env, $this->source, $context["t"], "author", [], "any", false, false, false, 8) === twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 8, $this->source); })()), "user", [], "any", false, false, false, 8))) {
-                // line 9
-                echo "        <td><a href=\"";
-                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("topic", ["id" => twig_get_attribute($this->env, $this->source, $context["t"], "id", [], "any", false, false, false, 9)]), "html", null, true);
-                echo "\"  >
-
-        <h1>";
-                // line 11
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["t"], "name", [], "any", false, false, false, 11), "html", null, true);
-                echo "</h1></a>
+            // line 21
+            if ((twig_get_attribute($this->env, $this->source, $context["t"], "author", [], "any", false, false, false, 21) === twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 21, $this->source); })()), "user", [], "any", false, false, false, 21))) {
+                // line 22
+                echo "        <li><h1><a href=\"";
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("topic", ["id" => twig_get_attribute($this->env, $this->source, $context["t"], "id", [], "any", false, false, false, 22)]), "html", null, true);
+                echo "\">";
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["t"], "name", [], "any", false, false, false, 22), "html", null, true);
+                echo "</a><span style=\"float : right ; font-size: medium \">Creé le ";
+                echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["t"], "creationDate", [], "any", false, false, false, 22), "d/m/Y"), "html", null, true);
+                echo "</span></h1></li>
 ";
             }
-            // line 13
+            // line 24
             echo "
 
 
@@ -103,6 +116,10 @@ class __TwigTemplate_ccba37c388a98f44a6c19df842f0889eed51ca7ccc2b216501a637194ed
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['t'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 28
+        echo "    </ul>
+    </div>
+";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -123,27 +140,40 @@ class __TwigTemplate_ccba37c388a98f44a6c19df842f0889eed51ca7ccc2b216501a637194ed
 
     public function getDebugInfo()
     {
-        return array (  98 => 13,  93 => 11,  87 => 9,  85 => 8,  82 => 7,  78 => 6,  73 => 4,  68 => 3,  58 => 2,  35 => 1,);
+        return array (  120 => 28,  111 => 24,  101 => 22,  99 => 21,  96 => 20,  92 => 19,  79 => 9,  71 => 4,  68 => 3,  58 => 2,  35 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends \"admin/bars.html.twig\" %}
 {% block contenpage %}
-<h1>bnj {{ app.user.id }}</h1>
-    <a href=\"{{ path('newTopic') }}\"><span>Taper votre sujet ou bien votre probleme à poser</span></a>
+    <link rel=\"stylesheet\" href=\"https://www.w3schools.com/w3css/4/w3.css\">
+<h1>Salut {{ app.user.nomComplet }}</h1>
+    <a style=\"float : right ; background-color: blue ; color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;\" href=\"{{ path('newTopic') }}\"><span>Créer Une nouvelle Conversation</span></a>
+
+    </br>
+    </br>
+    </br>
+    <div class=\"w3-container\">
+    <h2>Liste de vos anciennes conversations</h2>
+
+    <ul class=\"w3-ul w3-border\">
 
     {% for t in topics|filter(topics => not topics.deleted) %}
 
     {% if ( t.author is same  as app.user ) %}
-        <td><a href=\"{{ path('topic', {'id': t.id}) }}\"  >
-
-        <h1>{{ t.name }}</h1></a>
+        <li><h1><a href=\"{{ path('topic', {'id': t.id}) }}\">{{ t.name }}</a><span style=\"float : right ; font-size: medium \">Creé le {{t.creationDate|date(\"d/m/Y\") }}</span></h1></li>
 {% endif %}
 
 
 
 {% endfor %}
+    </ul>
+    </div>
 {% endblock %}", "forum/all.html.twig", "C:\\xampp\\htdocs\\PFA\\templates\\forum\\all.html.twig");
     }
 }

@@ -92,7 +92,7 @@ class __TwigTemplate_094dd5b11b67af685807401ce0159a1e59373fdbbb453cc94c036a8115c
 
 
 <div class=\"col-xl-12\">
-    <h3 class=\"page-name\">Commencer à chatter avec votre consultant ! Bienvenue</h3>
+    <h3 class=\"page-name\">Commencer à chatter avec votre consultant !</h3>
 </div>
 
 <div class=\"col-md-12\" id=\"pdetails-form\">
@@ -151,7 +151,7 @@ class __TwigTemplate_094dd5b11b67af685807401ce0159a1e59373fdbbb453cc94c036a8115c
 
 
 <div class=\"col-xl-12\">
-    <h3 class=\"page-name\">Commencer à chatter avec votre consultant ! Bienvenue</h3>
+    <h3 class=\"page-name\">Commencer à chatter avec votre consultant !</h3>
 </div>
 
 <div class=\"col-md-12\" id=\"pdetails-form\">

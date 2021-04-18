@@ -17,7 +17,7 @@ class NewMessageType extends AbstractType
     {
         $builder
             ->add('content', TextType::class, [
-                'attr' => ['placeholder'=>'entrez votre message',
+                'attr' => ['placeholder'=>'Tapez Votre Message...',
 //                    'class' => 'msger-input',
                 ],
                 'label' => false

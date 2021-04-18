@@ -230,12 +230,13 @@ $topics=$topicRepository->findAll();
     public function indexM(UserInterface $user,Topic $topic = null,TopicRepository $topicRepository,MessageRepository $messageRepository)
     {
 
-//$topics=$topicRepository->find($user);
 $topics=$topicRepository->findAll();
 
 
         return $this->render('forum/all.html.twig',['topics'=>$topics]);
     }
+
+
     /**
      * @Route("/forums/topics/{id}", name="topic")
      */

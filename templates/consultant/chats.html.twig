@@ -1,51 +1,33 @@
 {% extends "admin/bars.html.twig" %}
 {% block contenpage %}
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <h1>Salut {{ app.user.nomComplet }}</h1>
 
-    <h1>bnj {{ app.user.id }}</h1>
+</br>
+</br>
+</br>
+<h2>Liste de vos anciennes conversations</h2>
+<div class="w3-container">
+<ul class="w3-ul w3-border">
 
     {% for t in topics|filter(topics => not topics.deleted)  %}
+    <li>
+        <span><img class="msg-img" src=" {{ asset('uploads/images/'  ~ t.author.logo) }}" alt="Awesome Image"> <h4>  {{ t.author.nomComplet }}</h4></span>
+        <h4>{{ t.name }}</h4>
+        <a style=" float : right ; background-color: red ; color: white; padding: 15px 25px;text-align: center;text-decoration: none;display: inline-block;" href="{{ path('deleteT', {'id': t.id}) }}">Supprimer</a></span>
 
 
 
+        <a style=" background-color: limegreen ; color: white; padding: 15px 25px;text-align: center;text-decoration: none;display: inline-block;" href="{{ path('topic', {'id': t.id}) }}">Répondre</a>
+    </li>
 
-
-
-
-
-
-
-
-                <div class="row">
-
-                    <div class="col-md-12 col-lg-6">
-                        <h2 style="color: red"><a href="{{ path('deleteT', {'id': t.id}) }}" >supprimer</a></h2>
-
-                        <div class="member-card">
-
-                            {#                            <div class="member-pic"><img class="member-pic rounded-circle" src="https://randomuser.me/api/portraits/women/77.jpg"/></div>#}
-{#                            <div#}
-{#                                    class="msg-img"#}
-{#                                    style="background-image: url(https://image.flaticon.com/icons/svg/145/145867.svg)"#}
-{#                            ></div>#}
-                            <div
-                            >
-                                {#                        style="background-image: url(https://image.flaticon.com/icons/svg/145/145867.svg)"#}
-                                <img class="msg-img" src=" {{ asset('uploads/images/'  ~ t.author.logo) }}" alt="Awesome Image">
-                            </div>
-                            <div class="member-card-details">
-                                <a href="#"><div class="member-name">{{ t.author.nomComplet }}</div></a>
-                                <div class="member-position">{{ t.name}}</div>
-                            </div>
-                            <h2 style="color: red"><a href="{{ path('topic', {'id': t.id}) }}"  >repondre</a></h2>
-
-
-                        </div>
-                    </div>
 
 
 
 
                     {% endfor %}
+</ul>
+</div>
 {% endblock %}
 
 
