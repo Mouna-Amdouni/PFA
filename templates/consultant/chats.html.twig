@@ -1,12 +1,15 @@
 {% extends "admin/bars.html.twig" %}
 {% block contenpage %}
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <h1>Salut {{ app.user.nomComplet }}</h1>
 
 </br>
 </br>
 </br>
 <h2>Liste de vos anciennes conversations</h2>
+
+    </br>
+    </br>
+    </br>
 <div class="w3-container">
 <ul class="w3-ul w3-border">
 
@@ -23,11 +26,19 @@
 
 
 
-
+        </br>
+        </br>
+        </br>
 
                     {% endfor %}
+
 </ul>
+
 </div>
+
+
+
+
 {% endblock %}
 
 

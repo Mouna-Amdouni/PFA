@@ -65,7 +65,7 @@ class __TwigTemplate_ccba37c388a98f44a6c19df842f0889eed51ca7ccc2b216501a637194ed
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "contenpage"));
 
         // line 3
-        echo "    <link rel=\"stylesheet\" href=\"https://www.w3schools.com/w3css/4/w3.css\">
+        echo "
 <h1>Salut ";
         // line 4
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 4, $this->source); })()), "user", [], "any", false, false, false, 4), "nomComplet", [], "any", false, false, false, 4), "html", null, true);
@@ -85,7 +85,7 @@ class __TwigTemplate_ccba37c388a98f44a6c19df842f0889eed51ca7ccc2b216501a637194ed
     <div class=\"w3-container\">
     <h2>Liste de vos anciennes conversations</h2>
 
-    <ul class=\"w3-ul w3-border\">
+    <div class=\"w3-ul w3-border\">
 
     ";
         // line 19
@@ -98,13 +98,13 @@ class __TwigTemplate_ccba37c388a98f44a6c19df842f0889eed51ca7ccc2b216501a637194ed
             // line 21
             if ((twig_get_attribute($this->env, $this->source, $context["t"], "author", [], "any", false, false, false, 21) === twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 21, $this->source); })()), "user", [], "any", false, false, false, 21))) {
                 // line 22
-                echo "        <li><h1><a href=\"";
+                echo "        <p><h1><a href=\"";
                 echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("topic", ["id" => twig_get_attribute($this->env, $this->source, $context["t"], "id", [], "any", false, false, false, 22)]), "html", null, true);
                 echo "\">";
                 echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["t"], "name", [], "any", false, false, false, 22), "html", null, true);
                 echo "</a><span style=\"float : right ; font-size: medium \">Creé le ";
                 echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["t"], "creationDate", [], "any", false, false, false, 22), "d/m/Y"), "html", null, true);
-                echo "</span></h1></li>
+                echo "</span></h1></p>
 ";
             }
             // line 24
@@ -117,7 +117,7 @@ class __TwigTemplate_ccba37c388a98f44a6c19df842f0889eed51ca7ccc2b216501a637194ed
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['t'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 28
-        echo "    </ul>
+        echo "    </div>
     </div>
 ";
         
@@ -147,7 +147,7 @@ class __TwigTemplate_ccba37c388a98f44a6c19df842f0889eed51ca7ccc2b216501a637194ed
     {
         return new Source("{% extends \"admin/bars.html.twig\" %}
 {% block contenpage %}
-    <link rel=\"stylesheet\" href=\"https://www.w3schools.com/w3css/4/w3.css\">
+
 <h1>Salut {{ app.user.nomComplet }}</h1>
     <a style=\"float : right ; background-color: blue ; color: white;
   padding: 15px 25px;
@@ -161,18 +161,18 @@ class __TwigTemplate_ccba37c388a98f44a6c19df842f0889eed51ca7ccc2b216501a637194ed
     <div class=\"w3-container\">
     <h2>Liste de vos anciennes conversations</h2>
 
-    <ul class=\"w3-ul w3-border\">
+    <div class=\"w3-ul w3-border\">
 
     {% for t in topics|filter(topics => not topics.deleted) %}
 
     {% if ( t.author is same  as app.user ) %}
-        <li><h1><a href=\"{{ path('topic', {'id': t.id}) }}\">{{ t.name }}</a><span style=\"float : right ; font-size: medium \">Creé le {{t.creationDate|date(\"d/m/Y\") }}</span></h1></li>
+        <p><h1><a href=\"{{ path('topic', {'id': t.id}) }}\">{{ t.name }}</a><span style=\"float : right ; font-size: medium \">Creé le {{t.creationDate|date(\"d/m/Y\") }}</span></h1></p>
 {% endif %}
 
 
 
 {% endfor %}
-    </ul>
+    </div>
     </div>
 {% endblock %}", "forum/all.html.twig", "C:\\xampp\\htdocs\\PFA\\templates\\forum\\all.html.twig");
     }

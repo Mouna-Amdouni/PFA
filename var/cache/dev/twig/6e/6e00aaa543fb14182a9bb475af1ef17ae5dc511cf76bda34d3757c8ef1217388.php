@@ -65,61 +65,71 @@ class __TwigTemplate_af48efb06132d00ce609264270fb893d120913f79c3effdc21530fb7070
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "contenpage"));
 
         // line 3
-        echo "    <link rel=\"stylesheet\" href=\"https://www.w3schools.com/w3css/4/w3.css\">
-    <h1>Salut ";
-        // line 4
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 4, $this->source); })()), "user", [], "any", false, false, false, 4), "nomComplet", [], "any", false, false, false, 4), "html", null, true);
+        echo "    <h1>Salut ";
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 3, $this->source); })()), "user", [], "any", false, false, false, 3), "nomComplet", [], "any", false, false, false, 3), "html", null, true);
         echo "</h1>
 
 </br>
 </br>
 </br>
 <h2>Liste de vos anciennes conversations</h2>
+
+    </br>
+    </br>
+    </br>
 <div class=\"w3-container\">
 <ul class=\"w3-ul w3-border\">
 
     ";
-        // line 13
+        // line 16
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_array_filter($this->env, (isset($context["topics"]) || array_key_exists("topics", $context) ? $context["topics"] : (function () { throw new RuntimeError('Variable "topics" does not exist.', 13, $this->source); })()), function ($__topics__) use ($context, $macros) { $context["topics"] = $__topics__; return  !twig_get_attribute($this->env, $this->source, (isset($context["topics"]) || array_key_exists("topics", $context) ? $context["topics"] : (function () { throw new RuntimeError('Variable "topics" does not exist.', 13, $this->source); })()), "deleted", [], "any", false, false, false, 13); }));
+        $context['_seq'] = twig_ensure_traversable(twig_array_filter($this->env, (isset($context["topics"]) || array_key_exists("topics", $context) ? $context["topics"] : (function () { throw new RuntimeError('Variable "topics" does not exist.', 16, $this->source); })()), function ($__topics__) use ($context, $macros) { $context["topics"] = $__topics__; return  !twig_get_attribute($this->env, $this->source, (isset($context["topics"]) || array_key_exists("topics", $context) ? $context["topics"] : (function () { throw new RuntimeError('Variable "topics" does not exist.', 16, $this->source); })()), "deleted", [], "any", false, false, false, 16); }));
         foreach ($context['_seq'] as $context["_key"] => $context["t"]) {
-            // line 14
+            // line 17
             echo "    <li>
         <span><img class=\"msg-img\" src=\" ";
-            // line 15
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("uploads/images/" . twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["t"], "author", [], "any", false, false, false, 15), "logo", [], "any", false, false, false, 15))), "html", null, true);
+            // line 18
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("uploads/images/" . twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["t"], "author", [], "any", false, false, false, 18), "logo", [], "any", false, false, false, 18))), "html", null, true);
             echo "\" alt=\"Awesome Image\"> <h4>  ";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["t"], "author", [], "any", false, false, false, 15), "nomComplet", [], "any", false, false, false, 15), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["t"], "author", [], "any", false, false, false, 18), "nomComplet", [], "any", false, false, false, 18), "html", null, true);
             echo "</h4></span>
         <h4>";
-            // line 16
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["t"], "name", [], "any", false, false, false, 16), "html", null, true);
+            // line 19
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["t"], "name", [], "any", false, false, false, 19), "html", null, true);
             echo "</h4>
         <a style=\" float : right ; background-color: red ; color: white; padding: 15px 25px;text-align: center;text-decoration: none;display: inline-block;\" href=\"";
-            // line 17
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("deleteT", ["id" => twig_get_attribute($this->env, $this->source, $context["t"], "id", [], "any", false, false, false, 17)]), "html", null, true);
+            // line 20
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("deleteT", ["id" => twig_get_attribute($this->env, $this->source, $context["t"], "id", [], "any", false, false, false, 20)]), "html", null, true);
             echo "\">Supprimer</a></span>
 
 
 
         <a style=\" background-color: limegreen ; color: white; padding: 15px 25px;text-align: center;text-decoration: none;display: inline-block;\" href=\"";
-            // line 21
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("topic", ["id" => twig_get_attribute($this->env, $this->source, $context["t"], "id", [], "any", false, false, false, 21)]), "html", null, true);
+            // line 24
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("topic", ["id" => twig_get_attribute($this->env, $this->source, $context["t"], "id", [], "any", false, false, false, 24)]), "html", null, true);
             echo "\">Répondre</a>
     </li>
 
 
 
-
+        </br>
+        </br>
+        </br>
 
                     ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['t'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 29
-        echo "</ul>
+        // line 34
+        echo "
+</ul>
+
 </div>
+
+
+
+
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -141,20 +151,23 @@ class __TwigTemplate_af48efb06132d00ce609264270fb893d120913f79c3effdc21530fb7070
 
     public function getDebugInfo()
     {
-        return array (  121 => 29,  107 => 21,  100 => 17,  96 => 16,  90 => 15,  87 => 14,  83 => 13,  71 => 4,  68 => 3,  58 => 2,  35 => 1,);
+        return array (  125 => 34,  109 => 24,  102 => 20,  98 => 19,  92 => 18,  89 => 17,  85 => 16,  68 => 3,  58 => 2,  35 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends \"admin/bars.html.twig\" %}
 {% block contenpage %}
-    <link rel=\"stylesheet\" href=\"https://www.w3schools.com/w3css/4/w3.css\">
     <h1>Salut {{ app.user.nomComplet }}</h1>
 
 </br>
 </br>
 </br>
 <h2>Liste de vos anciennes conversations</h2>
+
+    </br>
+    </br>
+    </br>
 <div class=\"w3-container\">
 <ul class=\"w3-ul w3-border\">
 
@@ -171,11 +184,19 @@ class __TwigTemplate_af48efb06132d00ce609264270fb893d120913f79c3effdc21530fb7070
 
 
 
-
+        </br>
+        </br>
+        </br>
 
                     {% endfor %}
+
 </ul>
+
 </div>
+
+
+
+
 {% endblock %}
 
 

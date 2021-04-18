@@ -12,21 +12,16 @@
   <component name="ChangeListManager">
     <list default="true" id="8290fb78-f9c3-4b06-98bd-cb64614e2dce" name="Default Changelist" comment="c2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ForumController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ForumController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/NewMessageType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/NewMessageType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Visiteur/consultants.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Visiteur/consultants.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/bars.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/bars.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/consultant/chats.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/consultant/chats.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/forum/all.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/forum/all.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/forum/newTopic.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/forum/newTopic.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/sessions/sess_0n66p2grrimam9pnllfist01if" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/sessions/sess_s31hgapi7crgh313hv9lmoe1ol" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/sessions/sess_4sm4hp1cf2v5iboegganlreu99" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/sessions/sess_i4ibefdouls5mko41rm0o9c4k1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/sessions/sess_kcdk7n800qsdqapg9qsi13t22g" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/sessions/sess_oltpbjmsrg4fihshrg8f30uvgq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/sessions/sess_tg5jjmvdiburulj4lbbmngrque" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/01/0192476dea515756f29d1076774ffbca62af3c5d168e2857f93f0e374bc60a7f.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/twig/01/0192476dea515756f29d1076774ffbca62af3c5d168e2857f93f0e374bc60a7f.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/2c/2cefce9a9e65b0cd5b8c0265835d8a1e62a431222744328f165523b54b7cf3ee.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/twig/2c/2cefce9a9e65b0cd5b8c0265835d8a1e62a431222744328f165523b54b7cf3ee.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/6e/6e00aaa543fb14182a9bb475af1ef17ae5dc511cf76bda34d3757c8ef1217388.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/twig/6e/6e00aaa543fb14182a9bb475af1ef17ae5dc511cf76bda34d3757c8ef1217388.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/7c/7ceb7a45d8b2c442e451ea1dfdf47c61b5f2e3cedf365fa86ace958662a80b5d.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/twig/7c/7ceb7a45d8b2c442e451ea1dfdf47c61b5f2e3cedf365fa86ace958662a80b5d.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/7e/7e7c2102368f2ffaf2faa1b19c55c847d54aa52d93a13437e2f80329210a85ba.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/twig/7e/7e7c2102368f2ffaf2faa1b19c55c847d54aa52d93a13437e2f80329210a85ba.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/log/dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/var/log/dev.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -264,7 +259,7 @@
       <workItem from="1618535496194" duration="1708000" />
       <workItem from="1618537385038" duration="1011000" />
       <workItem from="1618609529407" duration="2599000" />
-      <workItem from="1618630299388" duration="18275000" />
+      <workItem from="1618630299388" duration="19365000" />
     </task>
     <task id="LOCAL-00001" summary="first2">
       <created>1617919102857</created>
@@ -351,8 +346,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/templates/forum/all.html.twig</url>
-          <line>21</line>
-          <option name="timeStamp" value="1" />
+          <line>1</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
