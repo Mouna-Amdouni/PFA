@@ -2,6 +2,7 @@
 
 namespace App\Repository;
 
+use App\Entity\Association;
 use App\Entity\Opportunite;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
@@ -47,4 +48,5 @@ class OpportuniteRepository extends ServiceEntityRepository
         ;
     }
     */
+
 }

@@ -28,7 +28,7 @@ class Opportunite
     private $image;
 
     /**
-     * @ORM\Column(type="date", nullable=true)
+     * @ORM\Column(type="datetime", nullable=true)
      */
     private $dateLimite;
 
@@ -61,6 +61,11 @@ class Opportunite
      * @ORM\ManyToOne(targetEntity=User::class, inversedBy="opportunites")
      */
     private $lanceur;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=Association::class, inversedBy="opportunites")
+     */
+    private $association;
 
     public function getId(): ?int
     {
@@ -96,13 +101,18 @@ class Opportunite
         return $this->dateLimite;
     }
 
-    public function setDateLimite(?\DateTimeInterface $dateLimite): self
+    public function setDateLimite(\DateTimeInterface $dateLimite): self
     {
         $this->dateLimite = $dateLimite;
 
         return $this;
     }
+    public function setPublicationDate(\DateTimeInterface $publicationDate): self
+    {
+        $this->publicationDate = $publicationDate;
 
+        return $this;
+    }
     public function getRegion(): ?string
     {
         return $this->region;
@@ -171,6 +181,18 @@ class Opportunite
     public function setLanceur(?User $lanceur): self
     {
         $this->lanceur = $lanceur;
+
+        return $this;
+    }
+
+    public function getAssociation(): ?Association
+    {
+        return $this->association;
+    }
+
+    public function setAssociation(?Association $association): self
+    {
+        $this->association = $association;
 
         return $this;
     }

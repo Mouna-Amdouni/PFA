@@ -86,98 +86,83 @@ class __TwigTemplate_52afedad819db088059f8e1fffff582704fcea4a5f014743e3fbe728f74
                         <ul class=\"nav navbar-right panel_toolbox\">
 ";
             // line 23
-            echo "                            <li><a href=\"";
-            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("association_new");
-            echo "\" class=\"btn btn-success\">NEW</a>
-
-                            </li>
+            echo "
                         </ul>
                         <div class=\"clearfix\"></div>
                     </div>
                     <div class=\"x_content\">
                         <div class=\"row\">
-                            <form action=\"";
-            // line 31
-            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("groupaction_association");
-            echo "\" id=\"grpaction\" method=\"post\" name=\"grpaction\">
-                                <div class=\"form-group form-inline\">
-                                    <select class=\"form-control\" name=\"action\" required id=\"action_select\">
-                                        <option value=\"\">Action de groupe</option>
-                                       
-                                        <option value=\"supprimer\">Supprimer</option>
-                                    </select>
-                                    <button class=\"btn btn-primary\" type=\"submit\">Go!!</button>
-                                </div>
-
-                            </form>
-                            <table id=\"example\" class=\"display table table-striped table-bordered dataminetables\" >
+";
+            // line 38
+            echo "
+";
+            // line 40
+            echo "                            <table id=\"example\" class=\"display table table-striped table-bordered dataminetables\" >
                                 <thead>
                                 <th><input type=\"checkbox\" id=\"select_all\" name=\"select_all\"></th>
-                                <th>Lanceur</th>
                                 <th>Titre</th>
-                                <th>Type</th>
-                                <th>Logo</th>
+                                <th>Lanceur</th>
+
+                                <th>Association</th>
+
                                 <th>Région</th>
                                 
 
 
 
-                                <th>Modifier</th>
+
                                
                                 <th>Suprimer</th>
                                 </thead>
                                 <tbody>
                                                                 ";
-            // line 59
+            // line 58
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable((isset($context["opportunites"]) || array_key_exists("opportunites", $context) ? $context["opportunites"] : (function () { throw new RuntimeError('Variable "opportunites" does not exist.', 59, $this->source); })()));
+            $context['_seq'] = twig_ensure_traversable((isset($context["opportunites"]) || array_key_exists("opportunites", $context) ? $context["opportunites"] : (function () { throw new RuntimeError('Variable "opportunites" does not exist.', 58, $this->source); })()));
             foreach ($context['_seq'] as $context["_key"] => $context["opportunite"]) {
-                // line 60
+                // line 59
                 echo "                                                                    <tr>
                                                                         <td><input type=\"checkbox\" class=\"chkgrp\" name=\"chkgrp[]\" value=\"";
-                // line 61
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["opportunite"], "id", [], "any", false, false, false, 61), "html", null, true);
+                // line 60
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["opportunite"], "id", [], "any", false, false, false, 60), "html", null, true);
                 echo "\"></td>
-                                                                        <td>";
+
+                                                                                        <td>";
                 // line 62
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["opportunite"], "lanceur", [], "any", false, false, false, 62), "html", null, true);
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["opportunite"], "titre", [], "any", false, false, false, 62), "html", null, true);
                 echo "</td>
-                                                                                        <td>";
+                                                                        <td>";
                 // line 63
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["opportunite"], "titre", [], "any", false, false, false, 63), "html", null, true);
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["opportunite"], "lanceur", [], "any", false, false, false, 63), "nomComplet", [], "any", false, false, false, 63), "html", null, true);
                 echo "</td>
-                                                                                        <td>";
+                                                                        <td>";
                 // line 64
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["opportunite"], "type", [], "any", false, false, false, 64), "html", null, true);
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["opportunite"], "association", [], "any", false, false, false, 64), "titre", [], "any", false, false, false, 64), "html", null, true);
                 echo "</td>
-                                                                                       
-                                                                                        
-                                                                                     <td>   <img width=\"50px\" height=\"50px\" src=\" ";
-                // line 67
-                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("uploads/images/" . twig_get_attribute($this->env, $this->source, $context["opportunite"], "logo", [], "any", false, false, false, 67))), "html", null, true);
-                echo "\" alt=\"Awesome Image\">
-                                                                                     </td>
-                                                                                        
-                                                                                        <td>";
-                // line 70
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["opportunite"], "region", [], "any", false, false, false, 70), "html", null, true);
+
+
+
+
+                                                                        <td>";
+                // line 69
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["opportunite"], "region", [], "any", false, false, false, 69), "html", null, true);
                 echo "</td>
-                                                                        <td><a class=\"btn btn-primary\" href=\"";
+";
                 // line 71
-                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("association_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["opportunite"], "id", [], "any", false, false, false, 71)]), "html", null, true);
-                echo "\"><i class=\"fa fa-edit\"></i></a></td>
-                                                                        
-                                                                        <td><a href=\"";
+                echo "
+";
                 // line 73
-                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("opportunite_delete", ["id" => twig_get_attribute($this->env, $this->source, $context["opportunite"], "id", [], "any", false, false, false, 73)]), "html", null, true);
-                echo "\" class=\"btn btn-danger disable-btn del-link\" type=\"submit\" ><i class=\"fa fa-trash\"></i></a></td>
+                echo "                                                                        <td><a href=\"";
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("opAdminDelete", ["id" => twig_get_attribute($this->env, $this->source, $context["opportunite"], "id", [], "any", false, false, false, 73)]), "html", null, true);
+                echo "\" class=\"btn btn-danger\"  type=\"submit\" ><i class=\"fa fa-trash\"></i></a></td>
+
                                                                     </tr>
                                                                 ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['opportunite'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 76
+            // line 77
             echo "                                </tbody>
                             </table>
                         </div>
@@ -188,7 +173,7 @@ class __TwigTemplate_52afedad819db088059f8e1fffff582704fcea4a5f014743e3fbe728f74
     </div>
     ";
         } else {
-            // line 85
+            // line 86
             echo "    <h1><strong>404</strong>  Vous n'avez pas l'acces</h1>
     ";
         }
@@ -212,7 +197,7 @@ class __TwigTemplate_52afedad819db088059f8e1fffff582704fcea4a5f014743e3fbe728f74
 
     public function getDebugInfo()
     {
-        return array (  192 => 85,  181 => 76,  172 => 73,  167 => 71,  163 => 70,  157 => 67,  151 => 64,  147 => 63,  143 => 62,  139 => 61,  136 => 60,  132 => 59,  101 => 31,  89 => 23,  71 => 6,  68 => 5,  58 => 4,  35 => 2,);
+        return array (  177 => 86,  166 => 77,  155 => 73,  152 => 71,  148 => 69,  140 => 64,  136 => 63,  132 => 62,  127 => 60,  124 => 59,  120 => 58,  100 => 40,  97 => 38,  89 => 23,  71 => 6,  68 => 5,  58 => 4,  35 => 2,);
     }
 
     public function getSourceContext()
@@ -239,38 +224,37 @@ class __TwigTemplate_52afedad819db088059f8e1fffff582704fcea4a5f014743e3fbe728f74
                         <h2>Liste des opportunités</h2>
                         <ul class=\"nav navbar-right panel_toolbox\">
 {#                            <li><a href=\"{{ path('newAss',{'idPA':app.user.id}) }}\" class=\"btn btn-success\">NEW</a>#}
-                            <li><a href=\"{{ path('association_new') }}\" class=\"btn btn-success\">NEW</a>
 
-                            </li>
                         </ul>
                         <div class=\"clearfix\"></div>
                     </div>
                     <div class=\"x_content\">
                         <div class=\"row\">
-                            <form action=\"{{ path('groupaction_association') }}\" id=\"grpaction\" method=\"post\" name=\"grpaction\">
-                                <div class=\"form-group form-inline\">
-                                    <select class=\"form-control\" name=\"action\" required id=\"action_select\">
-                                        <option value=\"\">Action de groupe</option>
-                                       
-                                        <option value=\"supprimer\">Supprimer</option>
-                                    </select>
-                                    <button class=\"btn btn-primary\" type=\"submit\">Go!!</button>
-                                </div>
+{#                            <form action=\"{{ path('groupaction_association') }}\" id=\"grpaction\" method=\"post\" name=\"grpaction\">#}
+{#                                <div class=\"form-group form-inline\">#}
+{#                                    <select class=\"form-control\" name=\"action\" required id=\"action_select\">#}
+{#                                        <option value=\"\">Action de groupe</option>#}
+{#                                       #}
+{#                                        <option value=\"supprimer\">Supprimer</option>#}
+{#                                    </select>#}
+{#                                    <button class=\"btn btn-primary\" type=\"submit\">Go!!</button>#}
+{#                                </div>#}
 
-                            </form>
+{#                            </form>#}
                             <table id=\"example\" class=\"display table table-striped table-bordered dataminetables\" >
                                 <thead>
                                 <th><input type=\"checkbox\" id=\"select_all\" name=\"select_all\"></th>
-                                <th>Lanceur</th>
                                 <th>Titre</th>
-                                <th>Type</th>
-                                <th>Logo</th>
+                                <th>Lanceur</th>
+
+                                <th>Association</th>
+
                                 <th>Région</th>
                                 
 
 
 
-                                <th>Modifier</th>
+
                                
                                 <th>Suprimer</th>
                                 </thead>
@@ -278,18 +262,20 @@ class __TwigTemplate_52afedad819db088059f8e1fffff582704fcea4a5f014743e3fbe728f74
                                                                 {% for opportunite in opportunites %}
                                                                     <tr>
                                                                         <td><input type=\"checkbox\" class=\"chkgrp\" name=\"chkgrp[]\" value=\"{{ opportunite.id }}\"></td>
-                                                                        <td>{{ opportunite.lanceur }}</td>
+
                                                                                         <td>{{ opportunite.titre }}</td>
-                                                                                        <td>{{ opportunite.type }}</td>
-                                                                                       
-                                                                                        
-                                                                                     <td>   <img width=\"50px\" height=\"50px\" src=\" {{ asset('uploads/images/'  ~ opportunite.logo) }}\" alt=\"Awesome Image\">
-                                                                                     </td>
-                                                                                        
-                                                                                        <td>{{ opportunite.region }}</td>
-                                                                        <td><a class=\"btn btn-primary\" href=\"{{ path('association_edit',{\"id\":opportunite.id}) }}\"><i class=\"fa fa-edit\"></i></a></td>
-                                                                        
-                                                                        <td><a href=\"{{ path('opportunite_delete', {'id': opportunite.id}) }}\" class=\"btn btn-danger disable-btn del-link\" type=\"submit\" ><i class=\"fa fa-trash\"></i></a></td>
+                                                                        <td>{{ opportunite.lanceur.nomComplet }}</td>
+                                                                        <td>{{ opportunite.association.titre }}</td>
+
+
+
+
+                                                                        <td>{{ opportunite.region }}</td>
+{#                                                                        <td><a class=\"btn btn-primary\" href=\"{{ path('association_edit',{\"id\":opportunite.id}) }}\"><i class=\"fa fa-edit\"></i></a></td>#}
+
+{#                                                                        <td><a href=\"{{ path('dd', {'id': opportunite.id}) }}\" class=\"btn btn-danger disable-btn del-link\" type=\"submit\" ><i class=\"fa fa-trash\"></i></a></td>#}
+                                                                        <td><a href=\"{{ path('opAdminDelete',{\"id\":opportunite.id})}}\" class=\"btn btn-danger\"  type=\"submit\" ><i class=\"fa fa-trash\"></i></a></td>
+
                                                                     </tr>
                                                                 {% endfor %}
                                 </tbody>
@@ -304,6 +290,6 @@ class __TwigTemplate_52afedad819db088059f8e1fffff582704fcea4a5f014743e3fbe728f74
     <h1><strong>404</strong>  Vous n'avez pas l'acces</h1>
     {% endif %}
 {% endblock %}
-", "admin/opportunite/opportunite.html.twig", "C:\\xampp\\htdocs\\PFA\\templates\\admin\\opportunite\\opportunite.html.twig");
+", "admin/opportunite/opportunite.html.twig", "G:\\PFEE-main\\templates\\admin\\opportunite\\opportunite.html.twig");
     }
 }

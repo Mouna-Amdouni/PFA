@@ -19,5 +19,10 @@ class TestController extends AbstractController
         return $this->render("bazz.html.twig");
     }
 
-
+    /**
+     * @Route("/test22",name="test2")
+     */
+    public function index22(){
+        return $this->render("test2.html.twig");
+    }
 }

@@ -134,45 +134,53 @@ return [
                         .'|(*:1368)'
                         .'|/(?'
                             .'|new(*:1384)'
-                            .'|([^/]++)(?'
-                                .'|(*:1404)'
-                                .'|/edit(*:1418)'
-                                .'|(*:1427)'
+                            .'|([^/]++)/edit(*:1406)'
+                            .'|newOP/([^/]++)(*:1429)'
+                            .'|opportunites(?'
+                                .'|(*:1453)'
+                                .'|Admin(*:1467)'
                             .')'
-                            .'|newOP/([^/]++)(*:1451)'
+                            .'|Opport/([^/]++)(*:1492)'
+                            .'|d(?'
+                                .'|ddelete/([^/]++)(*:1521)'
+                                .'|eleteOPAdmin/([^/]++)(*:1551)'
+                            .')'
                         .')'
                     .')'
-                    .'|([^/]++)/edit(*:1475)'
+                    .'|([^/]++)/edit(*:1576)'
                     .'|re(?'
                         .'|set\\-password(?'
-                            .'|(*:1505)'
+                            .'|(*:1606)'
                             .'|/(?'
-                                .'|check\\-email(*:1530)'
-                                .'|reset(?:/([^/]++))?(*:1558)'
+                                .'|check\\-email(*:1631)'
+                                .'|reset(?:/([^/]++))?(*:1659)'
                             .')'
                         .')'
-                        .'|gister(*:1575)'
+                        .'|gister(*:1676)'
                     .')'
                     .'|admin/(?'
-                        .'|login(*:1599)'
+                        .'|login(*:1700)'
                         .'|user(?'
-                            .'|(*:1615)'
+                            .'|(*:1716)'
                             .'|/(?'
-                                .'|new(*:1631)'
-                                .'|edit/([^/]++)(*:1653)'
+                                .'|new(*:1732)'
+                                .'|edit/([^/]++)(*:1754)'
                                 .'|change(?'
-                                    .'|validite/([^/]++)(*:1688)'
-                                    .'|Password(*:1705)'
+                                    .'|validite/([^/]++)(*:1789)'
+                                    .'|Password(*:1806)'
                                 .')'
-                                .'|delete/([^/]++)(*:1730)'
-                                .'|groupaction(*:1750)'
+                                .'|delete/([^/]++)(*:1831)'
+                                .'|groupaction(*:1851)'
                             .')'
                         .')'
                     .')'
-                    .'|logout(*:1768)'
-                    .'|test1(*:1782)'
-                    .'|changepass(*:1801)'
-                    .'|ConsultantUser(*:1824)'
+                    .'|logout(*:1869)'
+                    .'|test(?'
+                        .'|1(*:1886)'
+                        .'|22(*:1897)'
+                    .')'
+                    .'|changepass(*:1917)'
+                    .'|ConsultantUser(*:1940)'
                 .')'
             .')/?$}sDu',
     ],
@@ -239,27 +247,31 @@ return [
         1345 => [[['_route' => 'deleteT', '_controller' => 'App\\Controller\\ForumController::deletet', '_locale' => 'en'], ['_locale', 'id'], null, null, false, true, null]],
         1368 => [[['_route' => 'opportunite_index', '_controller' => 'App\\Controller\\OpportuniteController::index', '_locale' => 'en'], ['_locale'], ['GET' => 0], null, true, false, null]],
         1384 => [[['_route' => 'opportunite_new', '_controller' => 'App\\Controller\\OpportuniteController::new', '_locale' => 'en'], ['_locale'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
-        1404 => [[['_route' => 'opportunite_show', '_controller' => 'App\\Controller\\OpportuniteController::show', '_locale' => 'en'], ['_locale', 'id'], ['GET' => 0], null, false, true, null]],
-        1418 => [[['_route' => 'opportunite_edit', '_controller' => 'App\\Controller\\OpportuniteController::edit', '_locale' => 'en'], ['_locale', 'id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
-        1427 => [[['_route' => 'opportunite_delete', '_controller' => 'App\\Controller\\OpportuniteController::delete', '_locale' => 'en'], ['_locale', 'id'], ['POST' => 0], null, false, true, null]],
-        1451 => [[['_route' => 'OP_new', '_controller' => 'App\\Controller\\OpportuniteController::newPR', '_locale' => 'en'], ['_locale', 'id'], ['GET' => 0, 'POST' => 1], null, false, true, null]],
-        1475 => [[['_route' => 'userr_edit', '_controller' => 'App\\Controller\\ParamsUserController::edit', '_locale' => 'en'], ['_locale', 'id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
-        1505 => [[['_route' => 'app_forgot_password_request', '_controller' => 'App\\Controller\\ResetPasswordController::request', '_locale' => 'en'], ['_locale'], null, null, false, false, null]],
-        1530 => [[['_route' => 'app_check_email', '_controller' => 'App\\Controller\\ResetPasswordController::checkEmail', '_locale' => 'en'], ['_locale'], null, null, false, false, null]],
-        1558 => [[['_route' => 'app_reset_password', 'token' => null, '_controller' => 'App\\Controller\\ResetPasswordController::reset', '_locale' => 'en'], ['_locale', 'token'], null, null, false, true, null]],
-        1575 => [[['_route' => 'register', '_controller' => 'App\\Controller\\SecurityController::newUser', '_locale' => 'en'], ['_locale'], null, null, false, false, null]],
-        1599 => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login', '_locale' => 'en'], ['_locale'], null, null, false, false, null]],
-        1615 => [[['_route' => 'app_admin_users', '_controller' => 'App\\Controller\\UserController::users', '_locale' => 'en'], ['_locale'], null, null, false, false, null]],
-        1631 => [[['_route' => 'app_admin_new_user', '_controller' => 'App\\Controller\\UserController::newUser', '_locale' => 'en'], ['_locale'], null, null, false, false, null]],
-        1653 => [[['_route' => 'app_admin_edit_user', '_controller' => 'App\\Controller\\UserController::editUser', '_locale' => 'en'], ['_locale', 'id'], null, null, false, true, null]],
-        1688 => [[['_route' => 'app_admin_changevalidite_user', '_controller' => 'App\\Controller\\UserController::activate', '_locale' => 'en'], ['_locale', 'id'], ['POST' => 0], null, false, true, null]],
-        1705 => [[['_route' => 'app_admin_changepswd', '_controller' => 'App\\Controller\\UserController::changePswd', '_locale' => 'en'], ['_locale'], null, null, false, false, null]],
-        1730 => [[['_route' => 'app_admin_delete_user', '_controller' => 'App\\Controller\\UserController::delete', '_locale' => 'en'], ['_locale', 'id'], null, null, false, true, null]],
-        1750 => [[['_route' => 'app_admin_groupaction_user', '_controller' => 'App\\Controller\\UserController::groupAction', '_locale' => 'en'], ['_locale'], null, null, false, false, null]],
-        1768 => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout', '_locale' => 'en'], ['_locale'], null, null, false, false, null]],
-        1782 => [[['_route' => 'test1', '_controller' => 'App\\Controller\\TestController::index', '_locale' => 'en'], ['_locale'], null, null, false, false, null]],
-        1801 => [[['_route' => 'changepass', '_controller' => 'App\\Controller\\UserController::changePass', '_locale' => 'en'], ['_locale'], null, null, false, false, null]],
-        1824 => [
+        1406 => [[['_route' => 'opportunite_edit', '_controller' => 'App\\Controller\\OpportuniteController::edit', '_locale' => 'en'], ['_locale', 'id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        1429 => [[['_route' => 'OP_new', '_controller' => 'App\\Controller\\OpportuniteController::newPR', '_locale' => 'en'], ['_locale', 'id'], ['GET' => 0, 'POST' => 1], null, false, true, null]],
+        1453 => [[['_route' => 'opportunitesUser', '_controller' => 'App\\Controller\\OpportuniteController::index2', '_locale' => 'en'], ['_locale'], ['GET' => 0], null, false, false, null]],
+        1467 => [[['_route' => 'opportunitesAdmin', '_controller' => 'App\\Controller\\OpportuniteController::indexOppAdmin', '_locale' => 'en'], ['_locale'], ['GET' => 0], null, false, false, null]],
+        1492 => [[['_route' => 'UserOPP', '_controller' => 'App\\Controller\\OpportuniteController::UserOPP', '_locale' => 'en'], ['_locale', 'id'], ['GET' => 0], null, false, true, null]],
+        1521 => [[['_route' => 'dd', '_controller' => 'App\\Controller\\OpportuniteController::deletedd', '_locale' => 'en'], ['_locale', 'id'], null, null, false, true, null]],
+        1551 => [[['_route' => 'opAdminDelete', '_controller' => 'App\\Controller\\OpportuniteController::deleteAdminOP', '_locale' => 'en'], ['_locale', 'id'], null, null, false, true, null]],
+        1576 => [[['_route' => 'userr_edit', '_controller' => 'App\\Controller\\ParamsUserController::edit', '_locale' => 'en'], ['_locale', 'id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        1606 => [[['_route' => 'app_forgot_password_request', '_controller' => 'App\\Controller\\ResetPasswordController::request', '_locale' => 'en'], ['_locale'], null, null, false, false, null]],
+        1631 => [[['_route' => 'app_check_email', '_controller' => 'App\\Controller\\ResetPasswordController::checkEmail', '_locale' => 'en'], ['_locale'], null, null, false, false, null]],
+        1659 => [[['_route' => 'app_reset_password', 'token' => null, '_controller' => 'App\\Controller\\ResetPasswordController::reset', '_locale' => 'en'], ['_locale', 'token'], null, null, false, true, null]],
+        1676 => [[['_route' => 'register', '_controller' => 'App\\Controller\\SecurityController::newUser', '_locale' => 'en'], ['_locale'], null, null, false, false, null]],
+        1700 => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login', '_locale' => 'en'], ['_locale'], null, null, false, false, null]],
+        1716 => [[['_route' => 'app_admin_users', '_controller' => 'App\\Controller\\UserController::users', '_locale' => 'en'], ['_locale'], null, null, false, false, null]],
+        1732 => [[['_route' => 'app_admin_new_user', '_controller' => 'App\\Controller\\UserController::newUser', '_locale' => 'en'], ['_locale'], null, null, false, false, null]],
+        1754 => [[['_route' => 'app_admin_edit_user', '_controller' => 'App\\Controller\\UserController::editUser', '_locale' => 'en'], ['_locale', 'id'], null, null, false, true, null]],
+        1789 => [[['_route' => 'app_admin_changevalidite_user', '_controller' => 'App\\Controller\\UserController::activate', '_locale' => 'en'], ['_locale', 'id'], ['POST' => 0], null, false, true, null]],
+        1806 => [[['_route' => 'app_admin_changepswd', '_controller' => 'App\\Controller\\UserController::changePswd', '_locale' => 'en'], ['_locale'], null, null, false, false, null]],
+        1831 => [[['_route' => 'app_admin_delete_user', '_controller' => 'App\\Controller\\UserController::delete', '_locale' => 'en'], ['_locale', 'id'], null, null, false, true, null]],
+        1851 => [[['_route' => 'app_admin_groupaction_user', '_controller' => 'App\\Controller\\UserController::groupAction', '_locale' => 'en'], ['_locale'], null, null, false, false, null]],
+        1869 => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout', '_locale' => 'en'], ['_locale'], null, null, false, false, null]],
+        1886 => [[['_route' => 'test1', '_controller' => 'App\\Controller\\TestController::index', '_locale' => 'en'], ['_locale'], null, null, false, false, null]],
+        1897 => [[['_route' => 'test2', '_controller' => 'App\\Controller\\TestController::index22', '_locale' => 'en'], ['_locale'], null, null, false, false, null]],
+        1917 => [[['_route' => 'changepass', '_controller' => 'App\\Controller\\UserController::changePass', '_locale' => 'en'], ['_locale'], null, null, false, false, null]],
+        1940 => [
             [['_route' => 'consultant_index_user', '_controller' => 'App\\Controller\\UserController::indexUserConsultants', '_locale' => 'en'], ['_locale'], ['GET' => 0], null, false, false, null],
             [null, null, null, null, false, false, 0],
         ],

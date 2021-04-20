@@ -90,7 +90,7 @@ class __TwigTemplate_ccba37c388a98f44a6c19df842f0889eed51ca7ccc2b216501a637194ed
     ";
         // line 19
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_array_filter($this->env, (isset($context["topics"]) || array_key_exists("topics", $context) ? $context["topics"] : (function () { throw new RuntimeError('Variable "topics" does not exist.', 19, $this->source); })()), function ($__topics__) use ($context, $macros) { $context["topics"] = $__topics__; return  !twig_get_attribute($this->env, $this->source, (isset($context["topics"]) || array_key_exists("topics", $context) ? $context["topics"] : (function () { throw new RuntimeError('Variable "topics" does not exist.', 19, $this->source); })()), "deleted", [], "any", false, false, false, 19); }));
+        $context['_seq'] = twig_ensure_traversable(twig_reverse_filter($this->env, twig_sort_filter(twig_array_filter($this->env, (isset($context["topics"]) || array_key_exists("topics", $context) ? $context["topics"] : (function () { throw new RuntimeError('Variable "topics" does not exist.', 19, $this->source); })()), function ($__topics__) use ($context, $macros) { $context["topics"] = $__topics__; return  !twig_get_attribute($this->env, $this->source, (isset($context["topics"]) || array_key_exists("topics", $context) ? $context["topics"] : (function () { throw new RuntimeError('Variable "topics" does not exist.', 19, $this->source); })()), "deleted", [], "any", false, false, false, 19); }))));
         foreach ($context['_seq'] as $context["_key"] => $context["t"]) {
             // line 20
             echo "
@@ -163,7 +163,7 @@ class __TwigTemplate_ccba37c388a98f44a6c19df842f0889eed51ca7ccc2b216501a637194ed
 
     <div class=\"w3-ul w3-border\">
 
-    {% for t in topics|filter(topics => not topics.deleted) %}
+    {% for t in topics|filter(topics => not topics.deleted) | sort|reverse %}
 
     {% if ( t.author is same  as app.user ) %}
         <p><h1><a href=\"{{ path('topic', {'id': t.id}) }}\">{{ t.name }}</a><span style=\"float : right ; font-size: medium \">Creé le {{t.creationDate|date(\"d/m/Y\") }}</span></h1></p>
@@ -174,6 +174,6 @@ class __TwigTemplate_ccba37c388a98f44a6c19df842f0889eed51ca7ccc2b216501a637194ed
 {% endfor %}
     </div>
     </div>
-{% endblock %}", "forum/all.html.twig", "C:\\xampp\\htdocs\\PFA\\templates\\forum\\all.html.twig");
+{% endblock %}", "forum/all.html.twig", "G:\\PFEE-main\\templates\\forum\\all.html.twig");
     }
 }

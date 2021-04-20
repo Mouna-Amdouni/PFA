@@ -16,7 +16,7 @@
 
     <div class="w3-ul w3-border">
 
-    {% for t in topics|filter(topics => not topics.deleted) %}
+    {% for t in topics|filter(topics => not topics.deleted) | sort|reverse %}
 
     {% if ( t.author is same  as app.user ) %}
         <p><h1><a href="{{ path('topic', {'id': t.id}) }}">{{ t.name }}</a><span style="float : right ; font-size: medium ">Creé le {{t.creationDate|date("d/m/Y") }}</span></h1></p>

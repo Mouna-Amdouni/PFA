@@ -43,15 +43,16 @@
                     <ul class="nav side-menu">
                         <li><a href="{{ path('indexx') }}"><i class="fa fa-home"></i> {{ "backend.menu.home"|trans }}</a>
                         </li>
-                        <li><a href="{{ path('association_index_user') }}"><i class="fa fa-users"></i>Associations</a>
+                        <li><a href="{{ path('association_index_user') }}"><i class="fa fa-home"></i> voir toutes les associations tunisiennes</a>
+                        </li>
+                        <li><a href="{{ path('opportunitesUser') }}"><i class="fa fa-home"></i> voir toutes les opportunites </a>
                         </li>
 
-                        <li><a href="{{ path('consultant_index_user') }}"><i class="fa fa-briefcase"></i>Consultants</a></li>
                         {% if is_granted("ROLE_SUPERUSER") %}
 
                         <li class="nav-item">
 {#                            <a class="nav-link js-scroll" href="{{path('contact')}}"><i class="far fa-comment-dots"></i> Contact</a>#}
-                                                        <a class="nav-link js-scroll" href="{{path('adminchats')}}"><i class="glyphicon glyphicon-envelope"></i>  Conversations</a>
+                                                        <a class="nav-link js-scroll" href="{{path('adminchats')}}"><i class="far fa-comment-dots"></i> gerer toutes les conversations</a>
 
                         </li>
                         {% endif %}
@@ -92,17 +93,9 @@
                         {% endif %}
                         {% if is_granted("ROLE_CONSULTANT") %}
 
-                            <li><a href="{{ path('forumsall') }}"><i class="glyphicon glyphicon-envelope"></i> Conversations</a>
-
-                            </li>
-
-                        {% endif %}
-
-                         {% if is_granted("ROLE_CONSULTANT") %}
-
-                            <li><a><i class="glyphicon glyphicon-star"></i> Services <span class="fa fa-chevron-down"></span></a>
+                            <li><a><i class="fa fa-user"></i> Chats <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="{{ path('forumsall') }}">{{ "backend.menu.manage"|trans }} vos services</a></li>
+                                    <li><a href="{{ path('forumsall') }}">{{ "backend.menu.manage"|trans }} vos messages</a></li>
                                 </ul>
                             </li>
 
@@ -118,26 +111,28 @@
                         {% endif %}
                         {% if is_granted("ROLE_PASSOCIATION") %}
 
-                            <li><a href="{{ path('forums') }}"><i class="glyphicon glyphicon-envelope"></i>  Boite à Reception </a>
-
+                            <li><a><i class="fa fa-user"></i>Chatter avec un consultant <span class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+                                    <li><a href="{{ path('forums') }}">{{ "backend.menu.manage"|trans }} vos associations</a></li>
+                                </ul>
                             </li>
 
                         {% endif %}
-                        {% if is_granted("ROLE_WRITER") %}
-                        <li><a><i class="fa fa-bookmark"></i>{{ "backend.menu.categories"|trans }} <span class="fa fa-chevron-down"></span></a>
-                            <ul class="nav child_menu">
-                                <li><a href="{{ path('app_admin_categories') }}">{{ "backend.menu.manage"|trans }}</a></li>
-                            </ul>
-                        </li>
-                        <li><a><i class="fa fa-clipboard"></i> {{ "backend.menu.blog"|trans }} <span class="fa fa-chevron-down"></span></a>
-                            <ul class="nav child_menu">
-                                <li><a href="{{ path('app_admin_blogPosts') }}">{{ "backend.menu.manage"|trans }}</a></li>
-                                {% if is_granted("ROLE_EDITORIAL") %}
-                                    <li><a href="{{ path('app_admin_allhistorique_blogPosts') }}">{{ "backend.menu.history"|trans }}</a></li>
-                                {% endif %}
-                            </ul>
-                        </li>
-                        {% endif %}
+{#                        {% if is_granted("ROLE_WRITER") %}#}
+{#                        <li><a><i class="fa fa-bookmark"></i>{{ "backend.menu.categories"|trans }} <span class="fa fa-chevron-down"></span></a>#}
+{#                            <ul class="nav child_menu">#}
+{#                                <li><a href="{{ path('app_admin_categories') }}">{{ "backend.menu.manage"|trans }}</a></li>#}
+{#                            </ul>#}
+{#                        </li>#}
+{#                        <li><a><i class="fa fa-clipboard"></i> {{ "backend.menu.blog"|trans }} <span class="fa fa-chevron-down"></span></a>#}
+{#                            <ul class="nav child_menu">#}
+{#                                <li><a href="{{ path('app_admin_blogPosts') }}">{{ "backend.menu.manage"|trans }}</a></li>#}
+{#                                {% if is_granted("ROLE_EDITORIAL") %}#}
+{#                                    <li><a href="{{ path('app_admin_allhistorique_blogPosts') }}">{{ "backend.menu.history"|trans }}</a></li>#}
+{#                                {% endif %}#}
+{#                            </ul>#}
+{#                        </li>#}
+{#                        {% endif %}#}
                     </ul>
                 </div>
 
@@ -156,11 +151,11 @@
             </div>
             {% if app.user %}
 
-            <nav style="height:50px" class="nav navbar-nav">
-                <ul class=" navbar-right">
-                    <li class="nav-item dropdown open" style="padding-left: 15px;">
+            <nav  style="height:20px" class="navbar-right">
+                <ul>
+                    <li class="nav-item dropdown open" style="padding-left: 150px;">
                         <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-                            <img style="width: 40px; height: 30px" src=" {{ asset('uploads/images/'  ~ app.user.logo) }}" alt="Awesome Image">
+                            <img  style="width: 40px; height: 30px" src=" {{ asset('uploads/images/'  ~ app.user.logo) }}" alt="Awesome Image">
                             {{ app.user.nomComplet }}
                         </a>
                         <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">

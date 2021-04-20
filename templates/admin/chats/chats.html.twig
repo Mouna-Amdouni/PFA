@@ -55,7 +55,7 @@
                                     <th>Suprimer</th>
                                     </thead>
                                     <tbody>
-                                    {% for c in chats|filter(chats => not chats.deleted)  %}
+                                    {% for c in chats|sort|reverse  %}
                                         <tr>
                                             <td><input type="checkbox" class="chkgrp" name="chkgrp[]" value="{{ c.id }}"></td>
                                             <td>{{ c.id }}</td>

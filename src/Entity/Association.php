@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\AssociationRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -105,6 +107,16 @@ class Association
      * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $Facebook;
+
+    /**
+     * @ORM\OneToMany(targetEntity=Opportunite::class, mappedBy="association")
+     */
+    private $opportunites;
+
+    public function __construct()
+    {
+        $this->opportunites = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -319,6 +331,36 @@ class Association
     public function setFacebook(?string $Facebook): self
     {
         $this->Facebook = $Facebook;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Opportunite[]
+     */
+    public function getOpportunites(): Collection
+    {
+        return $this->opportunites;
+    }
+
+    public function addOpportunite(Opportunite $opportunite): self
+    {
+        if (!$this->opportunites->contains($opportunite)) {
+            $this->opportunites[] = $opportunite;
+            $opportunite->setAssociation($this);
+        }
+
+        return $this;
+    }
+
+    public function removeOpportunite(Opportunite $opportunite): self
+    {
+        if ($this->opportunites->removeElement($opportunite)) {
+            // set the owning side to null (unless already changed)
+            if ($opportunite->getAssociation() === $this) {
+                $opportunite->setAssociation(null);
+            }
+        }
 
         return $this;
     }

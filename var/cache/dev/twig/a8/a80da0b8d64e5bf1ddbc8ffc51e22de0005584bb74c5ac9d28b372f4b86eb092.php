@@ -125,7 +125,7 @@ class __TwigTemplate_ce089dda95fc939a805175119c1e020ad3197c3d833f18bc1eb9fc3a63e
                                     ";
             // line 58
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(twig_array_filter($this->env, (isset($context["chats"]) || array_key_exists("chats", $context) ? $context["chats"] : (function () { throw new RuntimeError('Variable "chats" does not exist.', 58, $this->source); })()), function ($__chats__) use ($context, $macros) { $context["chats"] = $__chats__; return  !twig_get_attribute($this->env, $this->source, (isset($context["chats"]) || array_key_exists("chats", $context) ? $context["chats"] : (function () { throw new RuntimeError('Variable "chats" does not exist.', 58, $this->source); })()), "deleted", [], "any", false, false, false, 58); }));
+            $context['_seq'] = twig_ensure_traversable(twig_reverse_filter($this->env, twig_sort_filter((isset($context["chats"]) || array_key_exists("chats", $context) ? $context["chats"] : (function () { throw new RuntimeError('Variable "chats" does not exist.', 58, $this->source); })()))));
             foreach ($context['_seq'] as $context["_key"] => $context["c"]) {
                 // line 59
                 echo "                                        <tr>
@@ -277,7 +277,7 @@ class __TwigTemplate_ce089dda95fc939a805175119c1e020ad3197c3d833f18bc1eb9fc3a63e
                                     <th>Suprimer</th>
                                     </thead>
                                     <tbody>
-                                    {% for c in chats|filter(chats => not chats.deleted)  %}
+                                    {% for c in chats|sort|reverse  %}
                                         <tr>
                                             <td><input type=\"checkbox\" class=\"chkgrp\" name=\"chkgrp[]\" value=\"{{ c.id }}\"></td>
                                             <td>{{ c.id }}</td>
@@ -309,6 +309,6 @@ class __TwigTemplate_ce089dda95fc939a805175119c1e020ad3197c3d833f18bc1eb9fc3a63e
         <h1><strong>404</strong>  Vous n'avez pas l'acces</h1>
     {% endif %}
 {% endblock %}
-", "admin/chats/chats.html.twig", "C:\\xampp\\htdocs\\PFA\\templates\\admin\\chats\\chats.html.twig");
+", "admin/chats/chats.html.twig", "G:\\PFEE-main\\templates\\admin\\chats\\chats.html.twig");
     }
 }
