@@ -43,18 +43,26 @@
                     <ul class="nav side-menu">
                         <li><a href="{{ path('indexx') }}"><i class="fa fa-home"></i> {{ "backend.menu.home"|trans }}</a>
                         </li>
-                        <li><a href="{{ path('association_index_user') }}"><i class="fa fa-home"></i> voir toutes les associations tunisiennes</a>
+                                           <li><a href="{{ path('association_index_user') }}"><i class="fa fa-users"></i>Associations</a>
                         </li>
-                        <li><a href="{{ path('opportunitesUser') }}"><i class="fa fa-home"></i> voir toutes les opportunites </a>
+
+                        {% if is_granted("ROLE_PASSOCIATION") %}
+                        <li><a href="{{ path('consultant_index_user') }}"><i class="fa fa-briefcase"></i>Consultants</a></li>
+
+                        {% endif %}
+
+                        <li><a href="{{ path('opportunitesUser') }}"><i class="fa fa-diamond""></i>Opportunités </a>
                         </li>
 
                         {% if is_granted("ROLE_SUPERUSER") %}
 
-                        <li class="nav-item">
-{#                            <a class="nav-link js-scroll" href="{{path('contact')}}"><i class="far fa-comment-dots"></i> Contact</a>#}
-                                                        <a class="nav-link js-scroll" href="{{path('adminchats')}}"><i class="far fa-comment-dots"></i> gerer toutes les conversations</a>
-
+                        
+                            <li><a><i class="glyphicon glyphicon-envelope"></i> Conversation <span class="fa fa-chevron-down"></span></a>
+                            <ul class="nav child_menu">
+                                <li><a href="{{path('adminchats')}}">{{ "backend.menu.manage"|trans }}</a></li>
+                            </ul>
                         </li>
+                        
                         {% endif %}
 
 
@@ -75,7 +83,7 @@
 
                         {% endif %}
                         {% if is_granted("ROLE_SUPERUSER") %}
-                            <li><a><i class="fa fa-user"></i> {{ "backend.menu.association"|trans }} <span class="fa fa-chevron-down"></span></a>
+                            <li><a><i class="fa fa-users"></i> {{ "backend.menu.association"|trans }} <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
                                     <li><a href="{{ path('association_index') }}">{{ "backend.menu.manage"|trans }}</a></li>
                                 </ul>
@@ -86,17 +94,15 @@
                          {% if is_granted("ROLE_PASSOCIATION") %}
                         <li><a><i class="fa fa-diamond"></i> {{ "backend.menu.opportunity"|trans }} <span class="fa fa-chevron-down"></span></a>
                             <ul class="nav child_menu">
-                                <li><a href="{{ path('opportunite_index') }}">{{ "backend.menu.manage"|trans }}</a></li>
+                                <li><a href="{{ path('opportunite_index') }}">{{ "backend.menu.manage"|trans }} vos opportunités</a></li>
                             </ul>
                         </li>
 
                         {% endif %}
                         {% if is_granted("ROLE_CONSULTANT") %}
 
-                            <li><a><i class="fa fa-user"></i> Chats <span class="fa fa-chevron-down"></span></a>
-                                <ul class="nav child_menu">
-                                    <li><a href="{{ path('forumsall') }}">{{ "backend.menu.manage"|trans }} vos messages</a></li>
-                                </ul>
+                                                     <li><a href="{{ path('forumsall') }}"><i class="glyphicon glyphicon-envelope"></i> Conversations</a>
+
                             </li>
 
                         {% endif %}
@@ -111,10 +117,8 @@
                         {% endif %}
                         {% if is_granted("ROLE_PASSOCIATION") %}
 
-                            <li><a><i class="fa fa-user"></i>Chatter avec un consultant <span class="fa fa-chevron-down"></span></a>
-                                <ul class="nav child_menu">
-                                    <li><a href="{{ path('forums') }}">{{ "backend.menu.manage"|trans }} vos associations</a></li>
-                                </ul>
+                                                   <li><a href="{{ path('forums') }}"><i class="glyphicon glyphicon-envelope"></i>  Boite à Reception </a>
+
                             </li>
 
                         {% endif %}

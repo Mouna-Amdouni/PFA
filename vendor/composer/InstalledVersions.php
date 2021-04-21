@@ -30,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '714827b5a76426fcfcf837e684fbcc23d9e28df2',
+    'reference' => '284e8264862938981ad1894362f37a40df648572',
     'name' => '__root__',
   ),
   'versions' => 
@@ -42,7 +42,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '714827b5a76426fcfcf837e684fbcc23d9e28df2',
+      'reference' => '284e8264862938981ad1894362f37a40df648572',
     ),
     'behat/transliterator' => 
     array (

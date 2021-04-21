@@ -290,6 +290,6 @@ class __TwigTemplate_52afedad819db088059f8e1fffff582704fcea4a5f014743e3fbe728f74
     <h1><strong>404</strong>  Vous n'avez pas l'acces</h1>
     {% endif %}
 {% endblock %}
-", "admin/opportunite/opportunite.html.twig", "G:\\PFEE-main\\templates\\admin\\opportunite\\opportunite.html.twig");
+", "admin/opportunite/opportunite.html.twig", "C:\\xampp\\htdocs\\PFA\\templates\\admin\\opportunite\\opportunite.html.twig");
     }
 }

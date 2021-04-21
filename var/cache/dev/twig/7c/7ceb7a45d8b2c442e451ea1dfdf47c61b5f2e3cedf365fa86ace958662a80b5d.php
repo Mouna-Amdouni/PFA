@@ -135,50 +135,67 @@ class __TwigTemplate_b1a7be54e9ca85e00bb1c68bb81f576ce4c586e299bcab3ba9e66b967e5
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("backend.menu.home"), "html", null, true);
         echo "</a>
                         </li>
-                        <li><a href=\"";
+                                           <li><a href=\"";
         // line 46
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("association_index_user");
-        echo "\"><i class=\"fa fa-home\"></i> voir toutes les associations tunisiennes</a>
-                        </li>
-                        <li><a href=\"";
-        // line 48
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("opportunitesUser");
-        echo "\"><i class=\"fa fa-home\"></i> voir toutes les opportunites </a>
+        echo "\"><i class=\"fa fa-users\"></i>Associations</a>
                         </li>
 
                         ";
-        // line 51
-        if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_SUPERUSER")) {
-            // line 52
-            echo "
-                        <li class=\"nav-item\">
-";
-            // line 55
-            echo "                                                        <a class=\"nav-link js-scroll\" href=\"";
-            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("adminchats");
-            echo "\"><i class=\"far fa-comment-dots\"></i> gerer toutes les conversations</a>
+        // line 49
+        if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_PASSOCIATION")) {
+            // line 50
+            echo "                        <li><a href=\"";
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("consultant_index_user");
+            echo "\"><i class=\"fa fa-briefcase\"></i>Consultants</a></li>
 
-                        </li>
                         ";
         }
-        // line 59
+        // line 53
+        echo "
+                        <li><a href=\"";
+        // line 54
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("opportunitesUser");
+        echo "\"><i class=\"fa fa-diamond\"\"></i>Opportunités </a>
+                        </li>
+
+                        ";
+        // line 57
+        if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_SUPERUSER")) {
+            // line 58
+            echo "
+                        
+                            <li><a><i class=\"glyphicon glyphicon-envelope\"></i> Conversation <span class=\"fa fa-chevron-down\"></span></a>
+                            <ul class=\"nav child_menu\">
+                                <li><a href=\"";
+            // line 62
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("adminchats");
+            echo "\">";
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("backend.menu.manage"), "html", null, true);
+            echo "</a></li>
+                            </ul>
+                        </li>
+                        
+                        ";
+        }
+        // line 67
         echo "
 
 ";
-        // line 66
+        // line 74
         echo "
 
 
                         ";
-        // line 69
+        // line 77
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_SUPERUSER")) {
-            // line 70
+            // line 78
             echo "                        <li><a><i class=\"fa fa-user\"></i> ";
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("backend.menu.user"), "html", null, true);
             echo " <span class=\"fa fa-chevron-down\"></span></a>
                             <ul class=\"nav child_menu\">
                                 <li><a href=\"";
-            // line 72
+            // line 80
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_admin_users");
             echo "\">";
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("backend.menu.manage"), "html", null, true);
@@ -188,16 +205,16 @@ class __TwigTemplate_b1a7be54e9ca85e00bb1c68bb81f576ce4c586e299bcab3ba9e66b967e5
 
                         ";
         }
-        // line 77
+        // line 85
         echo "                        ";
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_SUPERUSER")) {
-            // line 78
-            echo "                            <li><a><i class=\"fa fa-user\"></i> ";
+            // line 86
+            echo "                            <li><a><i class=\"fa fa-users\"></i> ";
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("backend.menu.association"), "html", null, true);
             echo " <span class=\"fa fa-chevron-down\"></span></a>
                                 <ul class=\"nav child_menu\">
                                     <li><a href=\"";
-            // line 80
+            // line 88
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("association_index");
             echo "\">";
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("backend.menu.manage"), "html", null, true);
@@ -207,57 +224,53 @@ class __TwigTemplate_b1a7be54e9ca85e00bb1c68bb81f576ce4c586e299bcab3ba9e66b967e5
 
                         ";
         }
-        // line 85
+        // line 93
         echo "
                          ";
-        // line 86
+        // line 94
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_PASSOCIATION")) {
-            // line 87
+            // line 95
             echo "                        <li><a><i class=\"fa fa-diamond\"></i> ";
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("backend.menu.opportunity"), "html", null, true);
             echo " <span class=\"fa fa-chevron-down\"></span></a>
                             <ul class=\"nav child_menu\">
                                 <li><a href=\"";
-            // line 89
+            // line 97
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("opportunite_index");
             echo "\">";
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("backend.menu.manage"), "html", null, true);
-            echo "</a></li>
+            echo " vos opportunités</a></li>
                             </ul>
                         </li>
 
                         ";
         }
-        // line 94
+        // line 102
         echo "                        ";
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_CONSULTANT")) {
-            // line 95
+            // line 103
             echo "
-                            <li><a><i class=\"fa fa-user\"></i> Chats <span class=\"fa fa-chevron-down\"></span></a>
-                                <ul class=\"nav child_menu\">
-                                    <li><a href=\"";
-            // line 98
+                                                     <li><a href=\"";
+            // line 104
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("forumsall");
-            echo "\">";
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("backend.menu.manage"), "html", null, true);
-            echo " vos messages</a></li>
-                                </ul>
+            echo "\"><i class=\"glyphicon glyphicon-envelope\"></i> Conversations</a>
+
                             </li>
 
                         ";
         }
-        // line 103
+        // line 109
         echo "                        ";
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_PASSOCIATION")) {
-            // line 104
+            // line 110
             echo "
                             <li><a><i class=\"fa fa-user\"></i> ";
-            // line 105
+            // line 111
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("backend.menu.association"), "html", null, true);
             echo " <span class=\"fa fa-chevron-down\"></span></a>
                                 <ul class=\"nav child_menu\">
                                     <li><a href=\"";
-            // line 107
+            // line 113
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("association_indexP");
             echo "\">";
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("backend.menu.manage"), "html", null, true);
@@ -267,25 +280,21 @@ class __TwigTemplate_b1a7be54e9ca85e00bb1c68bb81f576ce4c586e299bcab3ba9e66b967e5
 
                         ";
         }
-        // line 112
+        // line 118
         echo "                        ";
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_PASSOCIATION")) {
-            // line 113
+            // line 119
             echo "
-                            <li><a><i class=\"fa fa-user\"></i>Chatter avec un consultant <span class=\"fa fa-chevron-down\"></span></a>
-                                <ul class=\"nav child_menu\">
-                                    <li><a href=\"";
-            // line 116
+                                                   <li><a href=\"";
+            // line 120
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("forums");
-            echo "\">";
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("backend.menu.manage"), "html", null, true);
-            echo " vos associations</a></li>
-                                </ul>
+            echo "\"><i class=\"glyphicon glyphicon-envelope\"></i>  Boite à Reception </a>
+
                             </li>
 
                         ";
         }
-        // line 136
+        // line 140
         echo "                    </ul>
                 </div>
 
@@ -303,39 +312,39 @@ class __TwigTemplate_b1a7be54e9ca85e00bb1c68bb81f576ce4c586e299bcab3ba9e66b967e5
                 <a id=\"menu_toggle\"><i class=\"fa fa-bars\"></i></a>
             </div>
             ";
-        // line 152
-        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 152, $this->source); })()), "user", [], "any", false, false, false, 152)) {
-            // line 153
+        // line 156
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 156, $this->source); })()), "user", [], "any", false, false, false, 156)) {
+            // line 157
             echo "
             <nav  style=\"height:20px\" class=\"navbar-right\">
                 <ul>
                     <li class=\"nav-item dropdown open\" style=\"padding-left: 150px;\">
                         <a href=\"javascript:;\" class=\"user-profile dropdown-toggle\" aria-haspopup=\"true\" id=\"navbarDropdown\" data-toggle=\"dropdown\" aria-expanded=\"false\">
                             <img  style=\"width: 40px; height: 30px\" src=\" ";
-            // line 158
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("uploads/images/" . twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 158, $this->source); })()), "user", [], "any", false, false, false, 158), "logo", [], "any", false, false, false, 158))), "html", null, true);
+            // line 162
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("uploads/images/" . twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 162, $this->source); })()), "user", [], "any", false, false, false, 162), "logo", [], "any", false, false, false, 162))), "html", null, true);
             echo "\" alt=\"Awesome Image\">
                             ";
-            // line 159
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 159, $this->source); })()), "user", [], "any", false, false, false, 159), "nomComplet", [], "any", false, false, false, 159), "html", null, true);
+            // line 163
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 163, $this->source); })()), "user", [], "any", false, false, false, 163), "nomComplet", [], "any", false, false, false, 163), "html", null, true);
             echo "
                         </a>
                         <div class=\"dropdown-menu dropdown-usermenu pull-right\" aria-labelledby=\"navbarDropdown\">
                             <a class=\"dropdown-item\"  href=\"";
-            // line 162
+            // line 166
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("changepass");
             echo "\"><i class=\"fa fa-key pull-right\"></i>";
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("backend.global.change_my_password"), "html", null, true);
             echo "</a>
                             <a class=\"dropdown-item\"  href=\"";
-            // line 163
+            // line 167
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
             echo "\"><i class=\"fa fa-sign-out pull-right\"></i>";
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("backend.global.logout"), "html", null, true);
             echo "</a>
                             <a class=\"dropdown-item\" href=\"";
-            // line 164
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("userr_edit", ["id" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 164, $this->source); })()), "user", [], "any", false, false, false, 164), "id", [], "any", false, false, false, 164)]), "html", null, true);
+            // line 168
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("userr_edit", ["id" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 168, $this->source); })()), "user", [], "any", false, false, false, 168), "id", [], "any", false, false, false, 168)]), "html", null, true);
             echo "\">Modifier votre compte</a>
 
                         </div>
@@ -344,13 +353,13 @@ class __TwigTemplate_b1a7be54e9ca85e00bb1c68bb81f576ce4c586e299bcab3ba9e66b967e5
             </nav>
         ";
         } else {
-            // line 171
+            // line 175
             echo "
 
             <a  href=\"#\"><h5 class=\"navbar-right\">cnx +inscrit</h5></a>
             ";
         }
-        // line 175
+        // line 179
         echo "
         </div>
     </div>
@@ -359,16 +368,16 @@ class __TwigTemplate_b1a7be54e9ca85e00bb1c68bb81f576ce4c586e299bcab3ba9e66b967e5
     <!-- page content -->
     <div class=\"right_col\" role=\"main\">
         ";
-        // line 182
+        // line 186
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 182, $this->source); })()), "flashes", [0 => "error"], "method", false, false, false, 182));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 186, $this->source); })()), "flashes", [0 => "error"], "method", false, false, false, 186));
         foreach ($context['_seq'] as $context["_key"] => $context["message"]) {
-            // line 183
+            // line 187
             echo "            <div class=\"alert alert-danger alert-dismissible \" role=\"alert\">
                 <button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">×</span>
                 </button>
                 <strong>";
-            // line 186
+            // line 190
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("backend.global.error"), "html", null, true);
             echo "</strong> ";
             echo twig_escape_filter($this->env, $context["message"], "html", null, true);
@@ -379,17 +388,17 @@ class __TwigTemplate_b1a7be54e9ca85e00bb1c68bb81f576ce4c586e299bcab3ba9e66b967e5
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['message'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 189
+        // line 193
         echo "        ";
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 189, $this->source); })()), "flashes", [0 => "success"], "method", false, false, false, 189));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 193, $this->source); })()), "flashes", [0 => "success"], "method", false, false, false, 193));
         foreach ($context['_seq'] as $context["_key"] => $context["message"]) {
-            // line 190
+            // line 194
             echo "            <div class=\"alert alert-success alert-dismissible \" role=\"alert\">
                 <button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">×</span>
                 </button>
                 <strong>";
-            // line 193
+            // line 197
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("backend.global.success"), "html", null, true);
             echo "</strong> ";
             echo twig_escape_filter($this->env, $context["message"], "html", null, true);
@@ -400,10 +409,10 @@ class __TwigTemplate_b1a7be54e9ca85e00bb1c68bb81f576ce4c586e299bcab3ba9e66b967e5
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['message'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 196
+        // line 200
         echo "        ";
         $this->displayBlock('contenpage', $context, $blocks);
-        // line 197
+        // line 201
         echo "    </div>
     <!-- /page content -->
 
@@ -417,7 +426,7 @@ class __TwigTemplate_b1a7be54e9ca85e00bb1c68bb81f576ce4c586e299bcab3ba9e66b967e5
 
     }
 
-    // line 196
+    // line 200
     public function block_contenpage($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -447,7 +456,7 @@ class __TwigTemplate_b1a7be54e9ca85e00bb1c68bb81f576ce4c586e299bcab3ba9e66b967e5
 
     public function getDebugInfo()
     {
-        return array (  421 => 196,  407 => 197,  404 => 196,  393 => 193,  388 => 190,  383 => 189,  372 => 186,  367 => 183,  363 => 182,  354 => 175,  348 => 171,  338 => 164,  332 => 163,  326 => 162,  320 => 159,  316 => 158,  309 => 153,  307 => 152,  289 => 136,  279 => 116,  274 => 113,  271 => 112,  261 => 107,  256 => 105,  253 => 104,  250 => 103,  240 => 98,  235 => 95,  232 => 94,  222 => 89,  216 => 87,  214 => 86,  211 => 85,  201 => 80,  195 => 78,  192 => 77,  182 => 72,  176 => 70,  174 => 69,  169 => 66,  165 => 59,  157 => 55,  153 => 52,  151 => 51,  145 => 48,  140 => 46,  133 => 44,  121 => 34,  117 => 32,  110 => 29,  108 => 28,  104 => 27,  100 => 25,  94 => 23,  92 => 22,  79 => 12,  75 => 10,  69 => 5,  59 => 4,  36 => 1,);
+        return array (  430 => 200,  416 => 201,  413 => 200,  402 => 197,  397 => 194,  392 => 193,  381 => 190,  376 => 187,  372 => 186,  363 => 179,  357 => 175,  347 => 168,  341 => 167,  335 => 166,  329 => 163,  325 => 162,  318 => 157,  316 => 156,  298 => 140,  290 => 120,  287 => 119,  284 => 118,  274 => 113,  269 => 111,  266 => 110,  263 => 109,  255 => 104,  252 => 103,  249 => 102,  239 => 97,  233 => 95,  231 => 94,  228 => 93,  218 => 88,  212 => 86,  209 => 85,  199 => 80,  193 => 78,  191 => 77,  186 => 74,  182 => 67,  172 => 62,  166 => 58,  164 => 57,  158 => 54,  155 => 53,  148 => 50,  146 => 49,  140 => 46,  133 => 44,  121 => 34,  117 => 32,  110 => 29,  108 => 28,  104 => 27,  100 => 25,  94 => 23,  92 => 22,  79 => 12,  75 => 10,  69 => 5,  59 => 4,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -497,18 +506,26 @@ class __TwigTemplate_b1a7be54e9ca85e00bb1c68bb81f576ce4c586e299bcab3ba9e66b967e5
                     <ul class=\"nav side-menu\">
                         <li><a href=\"{{ path('indexx') }}\"><i class=\"fa fa-home\"></i> {{ \"backend.menu.home\"|trans }}</a>
                         </li>
-                        <li><a href=\"{{ path('association_index_user') }}\"><i class=\"fa fa-home\"></i> voir toutes les associations tunisiennes</a>
+                                           <li><a href=\"{{ path('association_index_user') }}\"><i class=\"fa fa-users\"></i>Associations</a>
                         </li>
-                        <li><a href=\"{{ path('opportunitesUser') }}\"><i class=\"fa fa-home\"></i> voir toutes les opportunites </a>
+
+                        {% if is_granted(\"ROLE_PASSOCIATION\") %}
+                        <li><a href=\"{{ path('consultant_index_user') }}\"><i class=\"fa fa-briefcase\"></i>Consultants</a></li>
+
+                        {% endif %}
+
+                        <li><a href=\"{{ path('opportunitesUser') }}\"><i class=\"fa fa-diamond\"\"></i>Opportunités </a>
                         </li>
 
                         {% if is_granted(\"ROLE_SUPERUSER\") %}
 
-                        <li class=\"nav-item\">
-{#                            <a class=\"nav-link js-scroll\" href=\"{{path('contact')}}\"><i class=\"far fa-comment-dots\"></i> Contact</a>#}
-                                                        <a class=\"nav-link js-scroll\" href=\"{{path('adminchats')}}\"><i class=\"far fa-comment-dots\"></i> gerer toutes les conversations</a>
-
+                        
+                            <li><a><i class=\"glyphicon glyphicon-envelope\"></i> Conversation <span class=\"fa fa-chevron-down\"></span></a>
+                            <ul class=\"nav child_menu\">
+                                <li><a href=\"{{path('adminchats')}}\">{{ \"backend.menu.manage\"|trans }}</a></li>
+                            </ul>
                         </li>
+                        
                         {% endif %}
 
 
@@ -529,7 +546,7 @@ class __TwigTemplate_b1a7be54e9ca85e00bb1c68bb81f576ce4c586e299bcab3ba9e66b967e5
 
                         {% endif %}
                         {% if is_granted(\"ROLE_SUPERUSER\") %}
-                            <li><a><i class=\"fa fa-user\"></i> {{ \"backend.menu.association\"|trans }} <span class=\"fa fa-chevron-down\"></span></a>
+                            <li><a><i class=\"fa fa-users\"></i> {{ \"backend.menu.association\"|trans }} <span class=\"fa fa-chevron-down\"></span></a>
                                 <ul class=\"nav child_menu\">
                                     <li><a href=\"{{ path('association_index') }}\">{{ \"backend.menu.manage\"|trans }}</a></li>
                                 </ul>
@@ -540,17 +557,15 @@ class __TwigTemplate_b1a7be54e9ca85e00bb1c68bb81f576ce4c586e299bcab3ba9e66b967e5
                          {% if is_granted(\"ROLE_PASSOCIATION\") %}
                         <li><a><i class=\"fa fa-diamond\"></i> {{ \"backend.menu.opportunity\"|trans }} <span class=\"fa fa-chevron-down\"></span></a>
                             <ul class=\"nav child_menu\">
-                                <li><a href=\"{{ path('opportunite_index') }}\">{{ \"backend.menu.manage\"|trans }}</a></li>
+                                <li><a href=\"{{ path('opportunite_index') }}\">{{ \"backend.menu.manage\"|trans }} vos opportunités</a></li>
                             </ul>
                         </li>
 
                         {% endif %}
                         {% if is_granted(\"ROLE_CONSULTANT\") %}
 
-                            <li><a><i class=\"fa fa-user\"></i> Chats <span class=\"fa fa-chevron-down\"></span></a>
-                                <ul class=\"nav child_menu\">
-                                    <li><a href=\"{{ path('forumsall') }}\">{{ \"backend.menu.manage\"|trans }} vos messages</a></li>
-                                </ul>
+                                                     <li><a href=\"{{ path('forumsall') }}\"><i class=\"glyphicon glyphicon-envelope\"></i> Conversations</a>
+
                             </li>
 
                         {% endif %}
@@ -565,10 +580,8 @@ class __TwigTemplate_b1a7be54e9ca85e00bb1c68bb81f576ce4c586e299bcab3ba9e66b967e5
                         {% endif %}
                         {% if is_granted(\"ROLE_PASSOCIATION\") %}
 
-                            <li><a><i class=\"fa fa-user\"></i>Chatter avec un consultant <span class=\"fa fa-chevron-down\"></span></a>
-                                <ul class=\"nav child_menu\">
-                                    <li><a href=\"{{ path('forums') }}\">{{ \"backend.menu.manage\"|trans }} vos associations</a></li>
-                                </ul>
+                                                   <li><a href=\"{{ path('forums') }}\"><i class=\"glyphicon glyphicon-envelope\"></i>  Boite à Reception </a>
+
                             </li>
 
                         {% endif %}
@@ -653,6 +666,6 @@ class __TwigTemplate_b1a7be54e9ca85e00bb1c68bb81f576ce4c586e299bcab3ba9e66b967e5
 
 
 {% endblock %}
-", "admin/bars.html.twig", "G:\\PFEE-main\\templates\\admin\\bars.html.twig");
+", "admin/bars.html.twig", "C:\\xampp\\htdocs\\PFA\\templates\\admin\\bars.html.twig");
     }
 }
