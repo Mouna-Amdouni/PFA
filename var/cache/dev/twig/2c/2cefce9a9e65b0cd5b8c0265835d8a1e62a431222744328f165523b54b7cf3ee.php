@@ -65,114 +65,183 @@ class __TwigTemplate_ee2caa6091404c089d6c2e2ca840c9ba8572d62dfe5a67c62aec8389338
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "contenpage"));
 
         // line 5
-        echo "
+        echo "<style>
 
-<div style=\"
-    color:orange;
-  font-family: Lobster;
- \" id=\"video-info-section\" class=\"layer\">
-    <h1 class=\"text-center infotxt\">Voir tous nos consultants</h1>
+.search-result-categories>li>a {
+    color: #b6b6b6;
+    font-weight: 400
+}
 
-    <div class=\"x_content\">
-        <hr style=\"  border: 0;
+.search-result-categories>li>a:hover {
+    background-color: #ddd;
+    color: #555
+}
 
-  border-bottom: 3px solid #fff;
-  border-radius: 100%;
-  width: 50%;
-\"></hr>
-        <h2 style=\"color:#000;\" ed class=\"text-center txt1\">Liste des consultants</h2>
-    </div>
-    <div style=\"background-color: white\" class=\"\">
-        <div class=\"page-title\">
-            <div class=\"title_left\">
+.search-result-categories>li>a>.glyphicon {
+    margin-right: 5px
+}
 
-            </div>
-        </div>
+.search-result-categories>li>a>.badge {
+    float: right
+}
 
-        <div class=\"clearfix\"></div>
+.search-results-count {
+    margin-top: 10px
+}
 
-        <div class=\"row\">
-            <div class=\"col-md-12\">
-                <div class=\"x_panel\">
-                    <div class=\"x_title\">
-                        <h2>Tous les consultants</h2>
+.search-result-item {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px
+}
 
-                        <div class=\"clearfix\"></div>
-                    </div>
+.search-result-item:after,
+.search-result-item:before {
+    content: \" \";
+    display: table
+}
 
+.search-result-item:after {
+    clear: both
+}
 
+.search-result-item .image-link {
+    display: block;
+    overflow: hidden;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px
+}
 
-                    <div class=\"container blog-page\">
-                        <div class=\"row clearfix\">
+@media (min-width:768px) {
+    .search-result-item .image-link {
+        display: inline-block;
+        margin: -20px 0 -20px -20px;
+        float: left;
+        width: 200px
+    }
+}
 
+@media (max-width:767px) {
+    .search-result-item .image-link {
+        max-height: 200px
+    }
+}
 
+.search-result-item .image {
+    max-width: 100%
+}
 
+.search-result-item .info {
+    margin-top: 2px;
+    font-size: 12px;
+    color: #999
+}
+
+.search-result-item .description {
+    font-size: 13px
+}
+
+.search-result-item+.search-result-item {
+    margin-top: 20px
+}
+
+@media (min-width:768px) {
+    .search-result-item-body {
+        margin-left: 200px
+    }
+}
+
+.search-result-item-heading {
+    font-weight: 400
+}
+
+.search-result-item-heading>a {
+    color: #555
+}
+
+@media (min-width:768px) {
+    .search-result-item-heading {
+        margin: 0
+    }
+}
+
+.titre { margin-left : 500px ;  }
+</style>
+
+<h1 class=\"titre\"> Consultants </h1>
+
+<div>
+<div>
+
+    <div>
 
 
                             ";
-        // line 49
+        // line 116
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_array_filter($this->env, $context["users"], function ($__users__) use ($context, $macros) { $context["users"] = $__users__; return  !twig_get_attribute($this->env, $this->source, $context["users"], "deleted", [], "any", false, false, false, 49); }));
+        $context['_seq'] = twig_ensure_traversable(twig_array_filter($this->env, $context["users"], function ($__users__) use ($context, $macros) { $context["users"] = $__users__; return  !twig_get_attribute($this->env, $this->source, $context["users"], "deleted", [], "any", false, false, false, 116); }));
         foreach ($context['_seq'] as $context["_key"] => $context["users"]) {
-            // line 50
+            // line 117
             echo "                                ";
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, $context["users"], "roles", [], "any", false, false, false, 50));
+            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, $context["users"], "roles", [], "any", false, false, false, 117));
             foreach ($context['_seq'] as $context["_key"] => $context["r"]) {
-                // line 51
+                // line 118
                 echo "                                    ";
                 if (($context["r"] === "ROLE_CONSULTANT")) {
-                    // line 52
+                    // line 119
                     echo "
-                                <figure class=\"snip0013\">
-
-                                    <img width=\"auto\" height=\"200\"
-                                         src=\" ";
-                    // line 56
-                    echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("uploads/images/" . twig_get_attribute($this->env, $this->source, $context["users"], "logo", [], "any", false, false, false, 56))), "html", null, true);
-                    echo "\" alt=\"sample32\"/>
-                                    <div>
-                                        <a href=\"";
-                    // line 58
-                    echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("UserAssoci", ["id" => twig_get_attribute($this->env, $this->source, $context["users"], "id", [], "any", false, false, false, 58)]), "html", null, true);
-                    echo "\"><i
-                                                    class=\" center-icon\"><h4>";
-                    // line 59
-                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["users"], "nomComplet", [], "any", false, false, false, 59), "html", null, true);
-                    echo "</h4></i>
-                                        </br>
-                                            <i class=\" center-icon\"><h5>";
-                    // line 61
-                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["users"], "email", [], "any", false, false, false, 61), "html", null, true);
-                    echo "</h5></i>
-                                        </a>
-
-                                    </div>
-                                </figure>
+                                
+ <section class=\"search-result-item\">
+            <a class=\"image-link\" href=\"#\"><img class=\"image\" src=\" ";
+                    // line 122
+                    echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("uploads/images/" . twig_get_attribute($this->env, $this->source, $context["users"], "logo", [], "any", false, false, false, 122))), "html", null, true);
+                    echo "\">
+            </a>
+            <div class=\"search-result-item-body\">
+                <div class=\"row\">
+                    <div class=\"col-sm-9\">
+                        <h4 class=\"search-result-item-heading\"><a href=\"#\">";
+                    // line 127
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["users"], "nomComplet", [], "any", false, false, false, 127), "html", null, true);
+                    echo "</a></h4>
+                        <p class=\"info\">Consultant</p>
+                        <p class=\"info\">";
+                    // line 129
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["users"], "email", [], "any", false, false, false, 129), "html", null, true);
+                    echo "</p>
+                        <p class=\"description\">Not just usual Metro. But something bigger. Not just usual widgets, but real widgets. Not just yet another admin template, but next generation admin template.</p>
+                    </div>
+                    <div class=\"col-sm-3 text-align-center\">
+                        
+                        <a class=\"btn btn-primary btn-info btn-sm\" href=\"#\">Contacter</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
                                     ";
                 }
-                // line 69
+                // line 142
                 echo "                                ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['r'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 70
+            // line 143
             echo "                            ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['users'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 71
-        echo "                        </div>
-                    </div>
-                </div>
+        // line 144
+        echo "               
 
-            </div>
-        </div>
-    </div></div>
+       
+     </div>
+</div>
+</div>
     ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -194,7 +263,7 @@ class __TwigTemplate_ee2caa6091404c089d6c2e2ca840c9ba8572d62dfe5a67c62aec8389338
 
     public function getDebugInfo()
     {
-        return array (  169 => 71,  163 => 70,  157 => 69,  146 => 61,  141 => 59,  137 => 58,  132 => 56,  126 => 52,  123 => 51,  118 => 50,  114 => 49,  68 => 5,  58 => 4,  35 => 1,);
+        return array (  239 => 144,  233 => 143,  227 => 142,  211 => 129,  206 => 127,  198 => 122,  193 => 119,  190 => 118,  185 => 117,  181 => 116,  68 => 5,  58 => 4,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -203,79 +272,151 @@ class __TwigTemplate_ee2caa6091404c089d6c2e2ca840c9ba8572d62dfe5a67c62aec8389338
 
 
 {% block contenpage %}
+<style>
 
+.search-result-categories>li>a {
+    color: #b6b6b6;
+    font-weight: 400
+}
 
-<div style=\"
-    color:orange;
-  font-family: Lobster;
- \" id=\"video-info-section\" class=\"layer\">
-    <h1 class=\"text-center infotxt\">Voir tous nos consultants</h1>
+.search-result-categories>li>a:hover {
+    background-color: #ddd;
+    color: #555
+}
 
-    <div class=\"x_content\">
-        <hr style=\"  border: 0;
+.search-result-categories>li>a>.glyphicon {
+    margin-right: 5px
+}
 
-  border-bottom: 3px solid #fff;
-  border-radius: 100%;
-  width: 50%;
-\"></hr>
-        <h2 style=\"color:#000;\" ed class=\"text-center txt1\">Liste des consultants</h2>
-    </div>
-    <div style=\"background-color: white\" class=\"\">
-        <div class=\"page-title\">
-            <div class=\"title_left\">
+.search-result-categories>li>a>.badge {
+    float: right
+}
 
-            </div>
-        </div>
+.search-results-count {
+    margin-top: 10px
+}
 
-        <div class=\"clearfix\"></div>
+.search-result-item {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px
+}
 
-        <div class=\"row\">
-            <div class=\"col-md-12\">
-                <div class=\"x_panel\">
-                    <div class=\"x_title\">
-                        <h2>Tous les consultants</h2>
+.search-result-item:after,
+.search-result-item:before {
+    content: \" \";
+    display: table
+}
 
-                        <div class=\"clearfix\"></div>
-                    </div>
+.search-result-item:after {
+    clear: both
+}
 
+.search-result-item .image-link {
+    display: block;
+    overflow: hidden;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px
+}
 
+@media (min-width:768px) {
+    .search-result-item .image-link {
+        display: inline-block;
+        margin: -20px 0 -20px -20px;
+        float: left;
+        width: 200px
+    }
+}
 
-                    <div class=\"container blog-page\">
-                        <div class=\"row clearfix\">
+@media (max-width:767px) {
+    .search-result-item .image-link {
+        max-height: 200px
+    }
+}
 
+.search-result-item .image {
+    max-width: 100%
+}
 
+.search-result-item .info {
+    margin-top: 2px;
+    font-size: 12px;
+    color: #999
+}
 
+.search-result-item .description {
+    font-size: 13px
+}
+
+.search-result-item+.search-result-item {
+    margin-top: 20px
+}
+
+@media (min-width:768px) {
+    .search-result-item-body {
+        margin-left: 200px
+    }
+}
+
+.search-result-item-heading {
+    font-weight: 400
+}
+
+.search-result-item-heading>a {
+    color: #555
+}
+
+@media (min-width:768px) {
+    .search-result-item-heading {
+        margin: 0
+    }
+}
+
+.titre { margin-left : 500px ;  }
+</style>
+
+<h1 class=\"titre\"> Consultants </h1>
+
+<div>
+<div>
+
+    <div>
 
 
                             {% for users in users|filter(users => not users.deleted) %}
                                 {%  for r in users.roles %}
                                     {% if r is same as \"ROLE_CONSULTANT\" %}
 
-                                <figure class=\"snip0013\">
-
-                                    <img width=\"auto\" height=\"200\"
-                                         src=\" {{ asset('uploads/images/'  ~ users.logo) }}\" alt=\"sample32\"/>
-                                    <div>
-                                        <a href=\"{{ path('UserAssoci',{\"id\":users.id}) }}\"><i
-                                                    class=\" center-icon\"><h4>{{ users.nomComplet }}</h4></i>
-                                        </br>
-                                            <i class=\" center-icon\"><h5>{{ users.email }}</h5></i>
-                                        </a>
-
-                                    </div>
-                                </figure>
+                                
+ <section class=\"search-result-item\">
+            <a class=\"image-link\" href=\"#\"><img class=\"image\" src=\" {{ asset('uploads/images/'  ~ users.logo) }}\">
+            </a>
+            <div class=\"search-result-item-body\">
+                <div class=\"row\">
+                    <div class=\"col-sm-9\">
+                        <h4 class=\"search-result-item-heading\"><a href=\"#\">{{ users.nomComplet }}</a></h4>
+                        <p class=\"info\">Consultant</p>
+                        <p class=\"info\">{{users.email}}</p>
+                        <p class=\"description\">Not just usual Metro. But something bigger. Not just usual widgets, but real widgets. Not just yet another admin template, but next generation admin template.</p>
+                    </div>
+                    <div class=\"col-sm-3 text-align-center\">
+                        
+                        <a class=\"btn btn-primary btn-info btn-sm\" href=\"#\">Contacter</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
                                     {% endif %}
                                 {% endfor %}
                             {% endfor %}
-                        </div>
-                    </div>
-                </div>
+               
 
-            </div>
-        </div>
-    </div></div>
+       
+     </div>
+</div>
+</div>
     {% endblock %}
 ", "Visiteur/consultants.html.twig", "C:\\xampp\\htdocs\\PFA\\templates\\Visiteur\\consultants.html.twig");
     }

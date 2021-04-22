@@ -22,6 +22,15 @@ class UserFormType extends AbstractType
         $this->translator = $options['translator'];
 
         $builder
+        ->add("role", EntityType::class, [
+            "mapped" => false,
+            "class" => Role::class,
+            "required" => true,
+            "placeholder" => $this->translator->trans('backend.role.choice_role'),
+            "constraints" => [
+                new NotBlank(["message" => $this->translator->trans('backend.global.must_not_be_empty')]),
+            ]
+        ])
             ->add("username", TextType::class, ["label" => $this->translator->trans('backend.user.username')])
             ->add("email", EmailType::class)
             ->add("nomComplet", TextType::class, ["label" => $this->translator->trans('backend.user.name')])
@@ -32,16 +41,8 @@ class UserFormType extends AbstractType
                 "constraints" => [
                     new NotBlank(["message" => $this->translator->trans('backend.global.must_not_be_empty')])
                 ]
-            ])
-            ->add("role", EntityType::class, [
-                "mapped" => false,
-                "class" => Role::class,
-                "required" => true,
-                "placeholder" => $this->translator->trans('backend.role.choice_role'),
-                "constraints" => [
-                    new NotBlank(["message" => $this->translator->trans('backend.global.must_not_be_empty')]),
-                ]
             ]);
+            
     }
 
     public function configureOptions(OptionsResolver $resolver)
